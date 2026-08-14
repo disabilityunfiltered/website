@@ -1,9 +1,8 @@
-/* Thin brand-green strip above a white header; lockup sits directly on white */
-.brand-topbar { height: 8px; background: var(--brand-green); }
+/* Matching dark green bars above and below the white header */
+.brand-bar { height: 16px; background: var(--brand-green); }
 
 .site-header {
   background: var(--surface);
-  border-bottom: 1px solid var(--tint);
   padding: 12px 0;
 }
 .header-inner {
