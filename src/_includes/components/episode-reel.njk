@@ -16,7 +16,16 @@
     {% if collections.episodes.length %}
       {% for episode in collections.episodes.slice(0, 8) %}
       <article class="reel-card" data-reel-card>
+        {% if episode.data.youtube %}
+        <div class="reel-video" data-video-id="{{ episode.data.youtube }}" data-video-title="{{ episode.data.title }}">
+          <button type="button" class="reel-play" aria-label="Play {{ episode.data.title }}">
+            <img src="https://i.ytimg.com/vi/{{ episode.data.youtube }}/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="reel-play-badge" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          </button>
+        </div>
+        {% else %}
         <div class="reel-art" aria-hidden="true"><span>EP&nbsp;{{ loop.revindex }}</span></div>
+        {% endif %}
         <h3><a href="{{ episode.url }}">{{ episode.data.title }}</a></h3>
         {% if episode.data.guest %}<p class="reel-guest">with {{ episode.data.guest }}</p>{% endif %}
         <p class="reel-date">{{ episode.date | readableDate }}</p>

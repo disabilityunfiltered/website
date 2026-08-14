@@ -28,7 +28,41 @@
     });
   }
 
+  // Video: thumbnail swaps to an autoplaying embed on the active card only.
+  // Moving the reel restores the thumbnail so audio never plays off-centre.
+  var playing = null; // { box, originalHtml }
+  function stopVideo() {
+    if (playing) {
+      playing.box.innerHTML = playing.originalHtml;
+      playing = null;
+    }
+  }
+  function startVideo(box) {
+    stopVideo();
+    var id = box.getAttribute("data-video-id");
+    var title = box.getAttribute("data-video-title") || "Episode video";
+    playing = { box: box, originalHtml: box.innerHTML };
+    box.innerHTML =
+      '<iframe src="https://www.youtube-nocookie.com/embed/' + id +
+      '?autoplay=1" title="' + title.replace(/"/g, "&quot;") +
+      '" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+  }
+  stage.addEventListener("click", function (e) {
+    var play = e.target.closest ? e.target.closest(".reel-play") : null;
+    if (!play) return;
+    var card = play.closest("[data-reel-card]");
+    var idx = cards.indexOf(card);
+    if (idx === current) {
+      startVideo(play.closest(".reel-video"));
+    } else {
+      stopVideo();
+      current = idx;
+      render();
+    }
+  });
+
   function go(delta) {
+    stopVideo();
     current = Math.max(0, Math.min(cards.length - 1, current + delta));
     render();
   }
@@ -69,7 +103,7 @@
   stage.addEventListener("pointercancel", endDrag);
   stage.addEventListener("pointerleave", endDrag);
   stage.addEventListener("click", function (e) {
-    if (dragged) { e.preventDefault(); dragged = false; }
+    if (dragged) { e.preventDefault(); e.stopPropagation(); dragged = false; }
   }, true);
 
   render();
