@@ -8,7 +8,7 @@
 | --ink | #1A3A42 | Headings, nav, primary buttons | 11.3:1 on ground |
 | --text | #33424A | Body text | 9+:1 on ground |
 | --teal | #5A9CA6 | Decoration, borders, large fills ONLY | 2.9:1 - NEVER text on light |
-| --teal-strong | #3F7680 | Links, hovers, interactive | 4.8:1 on ground (AA) |
+| --teal-strong | #3A6E77 | Links, hovers, interactive | 5.34:1 on ground, 5.03:1 on tint (AA; darkened from HIA's #3F7680, which failed on tint at 4.49:1) |
 | --teal-soft | #8FC1C9 | Tints, eyebrows on dark | 8.2:1 on purple |
 | --tint | #EAF2F3 | Alternating section wash | |
 | --purple | #151E3F | Footer, depth blocks | white on it: 16:1 |

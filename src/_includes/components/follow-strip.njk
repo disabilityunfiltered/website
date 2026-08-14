@@ -2,12 +2,16 @@
 <section class="follow-strip" aria-labelledby="follow-heading">
   <div class="wrap">
     <h2 id="follow-heading">Follow the show</h2>
+    {% if site.listen.apple or site.listen.spotify or site.listen.youtube %}
     <p>New conversations, wherever you listen.</p>
+    {% else %}
+    <p>Platform links go live with the first episode. Until then, get them by email.</p>
+    {% endif %}
     <ul class="listen-badges">
       {% if site.listen.apple %}<li><a class="badge" href="{{ site.listen.apple }}">Apple Podcasts</a></li>{% endif %}
       {% if site.listen.spotify %}<li><a class="badge" href="{{ site.listen.spotify }}">Spotify</a></li>{% endif %}
       {% if site.listen.youtube %}<li><a class="badge" href="{{ site.listen.youtube }}">YouTube</a></li>{% endif %}
-      <li><a class="badge badge-email" href="mailto:{{ site.email }}?subject=Keep me posted about new episodes">Get email updates</a></li>
+      <li><a class="badge badge-email" href="mailto:{{ site.email }}?subject=Keep%20me%20posted%20about%20new%20episodes">Get email updates</a></li>
     </ul>
   </div>
 </section>

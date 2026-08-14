@@ -1,3 +1,6 @@
+/* Focus outlines must stay visible on the dark purple ground (SC 1.4.11) */
+.site-footer :focus-visible { outline-color: var(--on-dark); }
+
 .site-footer {
   background: var(--purple);
   color: var(--on-dark);
@@ -25,14 +28,6 @@
   display: inline-flex; align-items: center; min-height: 32px;
 }
 .footer-nav li, .footer-contact p { margin-bottom: 6px; }
-
-.social-icons { display: flex; gap: 8px; margin-top: 20px; list-style: none; }
-.social-icons a {
-  display: inline-flex; align-items: center; justify-content: center;
-  width: var(--target); height: var(--target);
-  border-radius: 50%; background: rgba(255, 255, 255, 0.08);
-}
-.social-icons a:hover { background: var(--teal-strong); color: var(--on-dark); }
 
 .footer-legal {
   margin-top: 48px; padding-top: 20px;

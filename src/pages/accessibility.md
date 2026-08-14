@@ -18,6 +18,6 @@ This site exists to share the voices of people with disability, so being usable 
 
 ## Found a barrier?
 
-If anything on this site is hard for you to use, that is a problem we want to fix. Email [{{ site.email }}](mailto:{{ site.email }}?subject=Accessibility issue) and tell us what happened. You'll get a reply from a human.
+If anything on this site is hard for you to use, that is a problem we want to fix. Email [{{ site.email }}](mailto:{{ site.email }}?subject=Accessibility%20issue) and tell us what happened. You'll get a reply from a human.
 
 _Last reviewed: August 2026._

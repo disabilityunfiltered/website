@@ -1,5 +1,6 @@
 /* Single source of truth for colour, type and spacing.
-   Contrast on --ground: --ink 11.3:1, --text 9+:1, --link 4.8:1 (AA).
+   Contrast: --ink 11.3:1 and --text 9+:1 on --ground; --teal-strong 5.34:1 on
+   --ground, 5.03:1 on --tint, 5.71:1 under white text (all AA, audit-verified).
    #5A9CA6 is DECORATIVE ONLY: never use it for text on light backgrounds (2.9:1). */
 :root {
   /* Brand palette (verified against heartsinaction.com.au 2026-08-14) */
@@ -8,7 +9,7 @@
   --ink: #1A3A42;         /* deep teal: headings, nav, primary buttons */
   --text: #33424A;        /* body text */
   --teal: #5A9CA6;        /* mid teal: borders, decoration, large fills */
-  --teal-strong: #3F7680; /* links, hovers, secondary buttons (AA on ground) */
+  --teal-strong: #3A6E77; /* links, hovers, secondary buttons (AA on ground AND tint) */
   --teal-soft: #8FC1C9;   /* tints, eyebrows on dark backgrounds */
   --tint: #EAF2F3;        /* light teal wash for alternating sections */
   --purple: #151E3F;      /* deep purple: footer, depth blocks */

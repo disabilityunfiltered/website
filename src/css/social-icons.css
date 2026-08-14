@@ -1,0 +1,7 @@
+.social-icons { display: flex; gap: 8px; margin-top: 20px; list-style: none; }
+.social-icons a {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: var(--target); height: var(--target);
+  border-radius: 50%; background: rgba(255, 255, 255, 0.08);
+}
+.social-icons a:hover { background: var(--teal-strong); color: var(--on-dark); }

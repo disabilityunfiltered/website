@@ -13,7 +13,7 @@ Eleventy 3 (ESM) static site. Node 24. Build: `npm run build` (output `_site/`).
 ## CSS
 
 - `src/css/tokens.css` holds every colour, font, spacing and size token. No hex codes anywhere else.
-- One CSS file per component, same base name as its template (header.css/header.njk). `base.css` holds reset, typography, buttons, focus states, utilities.
+- One CSS file per component, same base name as its template (header.css/header.njk). Page-scoped styles use the page's name (home.css styles index.njk's hero/latest/mission sections). `base.css` holds reset, typography, buttons, focus states, utilities.
 - CSS is passthrough-copied to `/css/`; each file is linked in base.njk. Adding a component = adding one link tag there.
 
 ## Findability contract
