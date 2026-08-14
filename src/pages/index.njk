@@ -14,21 +14,7 @@ permalink: /
   </div>
 </section>
 
-<section class="latest" aria-labelledby="latest-heading">
-  <div class="wrap">
-    <h2 id="latest-heading">Latest episodes</h2>
-    {% set episodes = collections.episodes %}
-    {% if episodes.length %}
-      <div class="episode-grid">
-        {% for episode in episodes.slice(0, 3) %}
-          {% include "components/episode-card.njk" %}
-        {% endfor %}
-      </div>
-    {% else %}
-      <p class="empty-state">First conversations are being recorded now. <a href="/follow/">Follow the show</a> to hear them first.</p>
-    {% endif %}
-  </div>
-</section>
+{% include "components/episode-reel.njk" %}
 
 <section class="mission-strip">
   <div class="wrap">

@@ -1,7 +1,7 @@
+/* Bands stack flush against their neighbours: no outer margins */
 .follow-strip {
   background: var(--tint);
   padding: 56px 0;
-  margin-top: var(--space-section);
 }
 .follow-strip h2 { margin-bottom: 6px; }
 .listen-badges {

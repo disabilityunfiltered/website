@@ -15,6 +15,7 @@ Eleventy 3 (ESM) static site. Node 24. Build: `npm run build` (output `_site/`).
 - `src/css/tokens.css` holds every colour, font, spacing and size token. No hex codes anywhere else.
 - One CSS file per component, same base name as its template (header.css/header.njk). Page-scoped styles use the page's name (home.css styles index.njk's hero/latest/mission sections). `base.css` holds reset, typography, buttons, focus states, utilities.
 - CSS is passthrough-copied to `/css/`; each file is linked in base.njk. Adding a component = adding one link tag there.
+- JS lives in `src/js/`, one file per interactive component, passthrough-copied to `/js/`, loaded with a deferred script tag inside the component's own .njk. Currently only episode-reel.js (the 3D episode fan: buttons, drag, arrow keys). Interactivity is optional enhancement; content must work without JS.
 
 ## Findability contract
 

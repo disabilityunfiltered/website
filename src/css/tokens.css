@@ -27,7 +27,7 @@
   /* Spacing & shape */
   --space-section: clamp(3.5rem, 8vw, 6.5rem);
   --space-block: 1.5rem;
-  --wrap: 1180px;
+  --wrap: 1440px;
   --wrap-narrow: 760px;
   --radius: 10px;
   --target: 44px; /* min touch target (exceeds WCAG 2.2 24px) */

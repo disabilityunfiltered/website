@@ -4,7 +4,6 @@
 .site-footer {
   background: var(--purple);
   color: var(--on-dark);
-  margin-top: var(--space-section);
   padding: 56px 0 24px;
 }
 .footer-grid {

@@ -1,17 +1,18 @@
+/* Dark teal band across the very top; focus outlines must stay visible on it */
 .site-header {
-  background: var(--ground);
-  border-bottom: 1px solid var(--tint);
+  background: var(--ink);
   padding: 14px 0;
 }
+.site-header :focus-visible { outline-color: var(--on-dark); }
 .header-inner {
   display: flex; align-items: center; justify-content: space-between;
   gap: 16px; flex-wrap: wrap;
 }
 .wordmark {
   font-size: 1.35rem; font-weight: 700; text-decoration: none;
-  color: var(--ink); letter-spacing: -0.01em;
+  color: var(--on-dark); letter-spacing: -0.01em;
 }
-.wordmark span { color: var(--teal-strong); }
+.wordmark span { color: var(--teal-soft); }
 .main-nav {
   display: flex; align-items: center; gap: 4px; flex-wrap: wrap;
   list-style: none;
@@ -19,12 +20,12 @@
 .main-nav a {
   display: inline-flex; align-items: center;
   min-height: var(--target); padding: 6px 14px;
-  color: var(--ink); text-decoration: none; font-weight: 500;
+  color: var(--on-dark); text-decoration: none; font-weight: 500;
   border-radius: var(--radius);
 }
-.main-nav a:hover { background: var(--tint); }
+.main-nav a:hover { background: rgba(255, 255, 255, 0.12); color: var(--on-dark); }
 .main-nav a[aria-current="page"] { text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 2px; }
 .main-nav .btn-follow {
-  background: var(--ink); color: var(--on-dark); margin-left: 8px; padding: 6px 20px;
+  background: var(--surface); color: var(--ink); margin-left: 8px; padding: 6px 20px;
 }
-.main-nav .btn-follow:hover { background: var(--teal-strong); }
+.main-nav .btn-follow:hover { background: var(--teal-soft); color: var(--ink); }

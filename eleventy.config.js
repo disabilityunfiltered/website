@@ -1,5 +1,5 @@
 export default function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy({ "src/css": "css", "src/assets": "assets", "src/robots.txt": "robots.txt" });
+  eleventyConfig.addPassthroughCopy({ "src/css": "css", "src/js": "js", "src/assets": "assets", "src/robots.txt": "robots.txt" });
 
   eleventyConfig.addCollection("episodes", (collectionApi) =>
     collectionApi.getFilteredByGlob("content/episodes/*.md").sort((a, b) => b.date - a.date)

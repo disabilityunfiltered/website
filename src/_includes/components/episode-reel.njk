@@ -1,0 +1,38 @@
+{# 3D fanned reel of episode cards. Drag sideways or use the arrow buttons.
+   Falls back to placeholder cards until real episodes exist in content/episodes/. #}
+<section class="episode-reel" aria-labelledby="latest-heading">
+  <div class="wrap reel-head">
+    <h2 id="latest-heading">Latest episodes</h2>
+    <div class="reel-controls">
+      <button type="button" class="reel-btn" data-reel-prev aria-label="Previous episode">
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <button type="button" class="reel-btn" data-reel-next aria-label="Next episode">
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="reel-stage" data-reel>
+    {% if collections.episodes.length %}
+      {% for episode in collections.episodes.slice(0, 8) %}
+      <article class="reel-card" data-reel-card>
+        <div class="reel-art" aria-hidden="true"><span>EP&nbsp;{{ loop.revindex }}</span></div>
+        <h3><a href="{{ episode.url }}">{{ episode.data.title }}</a></h3>
+        {% if episode.data.guest %}<p class="reel-guest">with {{ episode.data.guest }}</p>{% endif %}
+        <p class="reel-date">{{ episode.date | readableDate }}</p>
+        <p class="reel-links"><a href="{{ episode.url }}">Listen &amp; notes</a><a href="{{ episode.url }}#transcript">Transcript</a></p>
+      </article>
+      {% endfor %}
+    {% else %}
+      {% for i in [1, 2, 3, 4, 5] %}
+      <article class="reel-card reel-card-placeholder" data-reel-card>
+        <div class="reel-art" aria-hidden="true"><span>EP&nbsp;{{ i }}</span></div>
+        <h3>Coming soon</h3>
+        <p class="reel-guest">The first conversations are being recorded now.</p>
+        <p class="reel-links"><a href="/follow/">Follow to hear it first</a></p>
+      </article>
+      {% endfor %}
+    {% endif %}
+  </div>
+</section>
+<script defer src="/js/episode-reel.js"></script>
