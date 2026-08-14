@@ -1,0 +1,33 @@
+/* Single source of truth for colour, type and spacing.
+   Contrast on --ground: --ink 11.3:1, --text 9+:1, --link 4.8:1 (AA).
+   #5A9CA6 is DECORATIVE ONLY: never use it for text on light backgrounds (2.9:1). */
+:root {
+  /* Brand palette (verified against heartsinaction.com.au 2026-08-14) */
+  --ground: #F9F7F3;      /* warm white page background */
+  --surface: #FFFFFF;     /* cards */
+  --ink: #1A3A42;         /* deep teal: headings, nav, primary buttons */
+  --text: #33424A;        /* body text */
+  --teal: #5A9CA6;        /* mid teal: borders, decoration, large fills */
+  --teal-strong: #3F7680; /* links, hovers, secondary buttons (AA on ground) */
+  --teal-soft: #8FC1C9;   /* tints, eyebrows on dark backgrounds */
+  --tint: #EAF2F3;        /* light teal wash for alternating sections */
+  --purple: #151E3F;      /* deep purple: footer, depth blocks */
+  --on-dark: #FFFFFF;
+  --on-dark-muted: #C9D6DB;
+
+  /* Type */
+  --font: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --size-1: clamp(2rem, 4.5vw, 3.2rem);
+  --size-2: clamp(1.5rem, 3vw, 2rem);
+  --size-3: 1.25rem;
+  --size-body: 1.0625rem;
+  --size-small: 0.9375rem;
+
+  /* Spacing & shape */
+  --space-section: clamp(3.5rem, 8vw, 6.5rem);
+  --space-block: 1.5rem;
+  --wrap: 1180px;
+  --wrap-narrow: 760px;
+  --radius: 10px;
+  --target: 44px; /* min touch target (exceeds WCAG 2.2 24px) */
+}

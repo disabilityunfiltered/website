@@ -1,0 +1,38 @@
+---
+layout: layouts/base.njk
+title: Follow the show
+permalink: /follow/
+description: Follow Disability Stories on your favourite podcast app and social channels.
+---
+<div class="page">
+  <div class="wrap wrap-narrow">
+    <h1>Follow the show</h1>
+    <p>Following is free, always. New episodes land automatically in whichever app you use.</p>
+
+    <h2>Listen</h2>
+    {% if site.listen.apple or site.listen.spotify or site.listen.youtube %}
+    <ul class="listen-badges listen-badges-page">
+      {% if site.listen.apple %}<li><a class="badge" href="{{ site.listen.apple }}">Apple Podcasts</a></li>{% endif %}
+      {% if site.listen.spotify %}<li><a class="badge" href="{{ site.listen.spotify }}">Spotify</a></li>{% endif %}
+      {% if site.listen.youtube %}<li><a class="badge" href="{{ site.listen.youtube }}">YouTube</a></li>{% endif %}
+    </ul>
+    {% else %}
+    <p class="empty-state">Platform links go live with the first episode.</p>
+    {% endif %}
+
+    <h2>Follow along</h2>
+    {% if site.social.instagram or site.social.facebook or site.social.linkedin or site.social.youtube %}
+    <ul class="follow-social-list">
+      {% if site.social.instagram %}<li><a href="{{ site.social.instagram }}">Instagram</a></li>{% endif %}
+      {% if site.social.facebook %}<li><a href="{{ site.social.facebook }}">Facebook</a></li>{% endif %}
+      {% if site.social.linkedin %}<li><a href="{{ site.social.linkedin }}">LinkedIn</a></li>{% endif %}
+      {% if site.social.youtube %}<li><a href="{{ site.social.youtube }}">YouTube</a></li>{% endif %}
+    </ul>
+    {% else %}
+    <p class="empty-state">Social channel links are coming shortly.</p>
+    {% endif %}
+
+    <h2>Email updates</h2>
+    <p><a class="btn btn-primary" href="mailto:{{ site.email }}?subject=Keep me posted about new episodes">Get new episodes by email</a></p>
+  </div>
+</div>

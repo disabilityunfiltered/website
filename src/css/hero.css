@@ -1,0 +1,20 @@
+.hero {
+  padding: var(--space-section) 0;
+  background: linear-gradient(180deg, var(--ground) 0%, var(--tint) 100%);
+}
+.hero .eyebrow { margin-bottom: 14px; }
+.hero h1 { max-width: 18ch; }
+.hero-sub { max-width: 58ch; margin-top: var(--space-block); font-size: 1.15rem; }
+.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 32px; }
+
+.latest { padding: var(--space-section) 0 0; }
+.latest h2 { margin-bottom: var(--space-block); }
+
+.mission-strip {
+  margin-top: var(--space-section);
+  background: var(--ink); color: var(--on-dark);
+  padding: 48px 0;
+}
+.mission-strip p {
+  font-size: 1.3rem; line-height: 1.5; max-width: 46ch; font-weight: 500;
+}

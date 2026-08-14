@@ -1,0 +1,6 @@
+.page { padding: var(--space-section) 0 0; }
+.page h1 { margin-bottom: var(--space-block); }
+.page h2 { margin: 2.2rem 0 0.8rem; }
+.page p, .page ul, .page ol { margin-bottom: 1rem; }
+.page ul, .page ol { padding-left: 1.4rem; }
+.page em { color: var(--teal-strong); font-style: normal; font-size: var(--size-small); }

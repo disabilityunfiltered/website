@@ -1,0 +1,23 @@
+.follow-strip {
+  background: var(--tint);
+  padding: 56px 0;
+  margin-top: var(--space-section);
+}
+.follow-strip h2 { margin-bottom: 6px; }
+.listen-badges {
+  display: flex; gap: 12px; flex-wrap: wrap;
+  list-style: none; margin-top: 22px;
+}
+.badge {
+  display: inline-flex; align-items: center;
+  min-height: var(--target); padding: 8px 22px;
+  background: var(--ink); color: var(--on-dark);
+  border-radius: 999px; text-decoration: none; font-weight: 500;
+}
+.badge:hover { background: var(--teal-strong); color: var(--on-dark); }
+.badge-email { background: transparent; color: var(--ink); border: 2px solid var(--teal); }
+.badge-email:hover { background: transparent; color: var(--ink); border-color: var(--ink); }
+
+.listen-badges-page { margin-bottom: 12px; }
+.follow-social-list { list-style: none; }
+.follow-social-list li { margin-bottom: 8px; }

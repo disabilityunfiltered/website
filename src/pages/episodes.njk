@@ -1,0 +1,21 @@
+---
+layout: layouts/base.njk
+title: Episodes
+permalink: /episodes/
+description: All episodes of Disability Stories, with show notes and full transcripts.
+---
+<div class="page">
+  <div class="wrap">
+    <h1>Episodes</h1>
+    {% if collections.episodes.length %}
+      <div class="episode-grid">
+        {% for episode in collections.episodes %}
+          {% include "components/episode-card.njk" %}
+        {% endfor %}
+      </div>
+    {% else %}
+      <p class="empty-state">The first conversations are being recorded now. Every episode will be published here with show notes and a full transcript. <a href="/follow/">Follow the show</a> to hear them first.</p>
+    {% endif %}
+  </div>
+</div>
+{% include "components/follow-strip.njk" %}

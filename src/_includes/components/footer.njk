@@ -1,0 +1,26 @@
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <p class="footer-wordmark">Disability <span>Stories</span></p>
+      <p class="footer-mission">Honest conversations that inform, connect and give people a stronger voice.</p>
+      {% include "components/social-icons.njk" %}
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <h2>Explore</h2>
+      <ul>
+        <li><a href="/episodes/">Episodes</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/be-a-guest/">Be a Guest</a></li>
+        <li><a href="/follow/">Follow the show</a></li>
+      </ul>
+    </nav>
+    <div class="footer-contact">
+      <h2>Get in touch</h2>
+      <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      <p><a href="/accessibility/">Accessibility statement</a></p>
+    </div>
+  </div>
+  <div class="wrap footer-legal">
+    <p>&copy; {% year %} Disability Stories. Made in Australia.</p>
+  </div>
+</footer>

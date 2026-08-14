@@ -1,0 +1,14 @@
+{
+  "name": "disability-stories",
+  "version": "1.0.0",
+  "description": "Disability Stories podcast website - disabilitystories.com.au",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "eleventy",
+    "dev": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}

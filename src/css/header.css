@@ -1,0 +1,30 @@
+.site-header {
+  background: var(--ground);
+  border-bottom: 1px solid var(--tint);
+  padding: 14px 0;
+}
+.header-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 16px; flex-wrap: wrap;
+}
+.wordmark {
+  font-size: 1.35rem; font-weight: 700; text-decoration: none;
+  color: var(--ink); letter-spacing: -0.01em;
+}
+.wordmark span { color: var(--teal-strong); }
+.main-nav {
+  display: flex; align-items: center; gap: 4px; flex-wrap: wrap;
+  list-style: none;
+}
+.main-nav a {
+  display: inline-flex; align-items: center;
+  min-height: var(--target); padding: 6px 14px;
+  color: var(--ink); text-decoration: none; font-weight: 500;
+  border-radius: var(--radius);
+}
+.main-nav a:hover { background: var(--tint); }
+.main-nav a[aria-current="page"] { text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 2px; }
+.main-nav .btn-follow {
+  background: var(--ink); color: var(--on-dark); margin-left: 8px; padding: 6px 20px;
+}
+.main-nav .btn-follow:hover { background: var(--teal-strong); }

@@ -1,0 +1,11 @@
+{# Expects `episode` (a collection item). Transcript link is visible on the card by design. #}
+<article class="episode-card">
+  <h3><a href="{{ episode.url }}">{{ episode.data.title }}</a></h3>
+  {% if episode.data.guest %}<p class="episode-guest">with {{ episode.data.guest }}</p>{% endif %}
+  <p class="episode-date">{{ episode.date | readableDate }}</p>
+  {% if episode.data.summary %}<p class="episode-summary">{{ episode.data.summary }}</p>{% endif %}
+  <p class="episode-links">
+    <a href="{{ episode.url }}">Listen &amp; show notes</a>
+    <a href="{{ episode.url }}#transcript">Transcript</a>
+  </p>
+</article>
