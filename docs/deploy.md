@@ -14,7 +14,7 @@
 - Service: disability-stories (srv-d9vdj67lk1mc738nb9bg), project "My project" / Production, on the hello@ Render account ("My Workspace").
 - Live temp URL: https://disability-stories.onrender.com
 - Source: Public Git Repository (no GitHub OAuth). Build: `npm install; npm run build`. Publish directory: `_site`. Branch main.
-- IMPORTANT: no auto-deploy. After pushing to GitHub, trigger a deploy manually: Render dashboard > disability-stories > Manual Deploy, or set up a Deploy Hook (Settings > Deploy Hook) and curl it.
+- Auto-Deploy is set to "On Commit" but polling of public repos is slow/unreliable (observed 2026-08-14: push not picked up within minutes). After pushing, if no new deploy appears, trigger manually: Render dashboard > disability-stories > Manual Deploy > Deploy latest commit. A private Deploy Hook URL also exists under Settings > Deploy Hook (keep secret, never commit it).
 - Custom domain connected only after Matt signs off on the temp URL.
 
 ## DNS (Cloudflare, Matt's account, only he has login)
