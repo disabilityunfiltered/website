@@ -17,7 +17,7 @@ Source: verified against live heartsinaction.com.au 2026-08-14 (deep/mid teal fr
 
 ## Logo
 
-Master: Logo/disability_stories_logo_square_tight_1.png (3000px square, white background, NOT in the build). Web assets generated from it live in src/assets/: logo-mark.png (mic only, header chip), logo-full.png (full lockup, hero card), favicon-32.png, apple-touch-icon.png, og-image.png. The PNG background is solid white, so on coloured bands the logo always sits inside a white rounded card (.logo-chip in the header, .hero-logo on the home page); never place it directly on teal or purple. Regenerate sizes from the master if the logo changes.
+Masters in Logo/ (NOT in the build, never edit): "Disability Stories.svg" (horizontal lockup, transparent background) and disability_stories_logo_square_tight_1.png (3000px square, white background). In use: src/assets/logo-lockup.svg is the header logo, sitting on a white pill (.logo-chip) because its purple lettering has no contrast on the dark teal band; favicon-32.png, apple-touch-icon.png and og-image.png are generated from the PNG master. The square PNG's background is solid white, so anywhere it appears it sits on a white card, never directly on teal or purple. Regenerate derived sizes from the masters if the logo changes.
 
 ## Type
 
