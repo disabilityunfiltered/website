@@ -5,11 +5,17 @@
 - GitHub: account `disabilitystories` (created by Matt 2026-08-14). NEVER use the seoraptorio account for this project.
 - Render: Matt's account logged in with hello@. The HIA Emailer Render workspace (matt@heartsinaction.com.au, connected to Claude's Render MCP) is a DIFFERENT account; do not deploy this site there.
 
-## Render static site
+## GitHub repo
 
-- Type: Static Site (free tier). Build command: `npm install && npx @11ty/eleventy`. Publish directory: `_site`.
-- Deploys from the GitHub repo (fill in repo URL once created).
-- Temporary URL: (fill in once created). Custom domain connected only after Matt signs off on the temp URL.
+- https://github.com/DisabilityStories/website (public). Pushes authenticate via a repo-local credential store (.git/credentials, 90-day classic PAT created 2026-08-14, expires ~2026-11-12). To renew: generate a new classic PAT with repo scope on the DisabilityStories account and replace the token in .git/credentials.
+
+## Render static site (deployed 2026-08-14)
+
+- Service: disability-stories (srv-d9vdj67lk1mc738nb9bg), project "My project" / Production, on the hello@ Render account ("My Workspace").
+- Live temp URL: https://disability-stories.onrender.com
+- Source: Public Git Repository (no GitHub OAuth). Build: `npm install; npm run build`. Publish directory: `_site`. Branch main.
+- IMPORTANT: no auto-deploy. After pushing to GitHub, trigger a deploy manually: Render dashboard > disability-stories > Manual Deploy, or set up a Deploy Hook (Settings > Deploy Hook) and curl it.
+- Custom domain connected only after Matt signs off on the temp URL.
 
 ## DNS (Cloudflare, Matt's account, only he has login)
 

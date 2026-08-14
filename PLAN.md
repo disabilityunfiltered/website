@@ -1,5 +1,5 @@
 # Disability Stories - Build Plan
-Status: AWAITING MATT'S GO. Nothing below has been built yet except this folder, this plan, CLAUDE.md, and the desktop shortcut.
+Status: PHASE 1 LIVE at https://disability-stories.onrender.com (deployed 2026-08-14, audit-fixed build 2c31638). Awaiting Matt's review, social/listen URLs for src/_data/site.js, and sign-off before the domain is connected. Phase 2 (episodes) not started.
 Last updated: 2026-08-14
 
 ## 1. What this is
@@ -109,11 +109,11 @@ Findability rules that keep changes cheap forever:
 
 | Service | Purpose | Cost | Status |
 |---------|---------|------|--------|
-| Render static site | Hosting | Free | Render workspace already connected in Claude Code; site not created yet |
+| Render static site | Hosting | Free | LIVE: disability-stories.onrender.com on the hello@ account; details in docs/deploy.md |
 | Domain disabilitystories.com.au | Purchased | Done | Registrar: ChemiCloud (domain only, never touch). DNS: Cloudflare Free, Matt's account. See "DNS facts" below |
 | Email hosting for hello@ | Mailboxes for the domain | Zoho | DONE per Matt 2026-08-14 |
 | Podcast host (RSS) | Feed for Apple/Spotify | Spotify for Creators: free | Account exists per Matt 2026-08-14 |
-| GitHub repo | Source of truth, Render deploys from it | Free | Not created |
+| GitHub repo | Source of truth, Render deploys from it | Free | github.com/DisabilityStories/website (account: disabilitystories, NEVER seoraptorio) |
 
 ### DNS facts (provided by Matt 2026-08-14, move to docs/deploy.md in Phase 1)
 
