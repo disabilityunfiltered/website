@@ -1,5 +1,5 @@
-/* Matching dark green bars above and below the white header */
-.brand-bar { height: 16px; background: var(--brand-green); }
+/* Matching bars above and below the white header, same colour as the Follow button */
+.brand-bar { height: 16px; background: var(--ink); }
 
 .site-header {
   background: var(--surface);
