@@ -1,21 +1,18 @@
-/* Dark teal band across the very top; focus outlines must stay visible on it */
+/* Thin brand-green strip above a white header; lockup sits directly on white */
+.brand-topbar { height: 8px; background: var(--brand-green); }
+
 .site-header {
-  background: var(--ink);
-  padding: 14px 0;
+  background: var(--surface);
+  border-bottom: 1px solid var(--tint);
+  padding: 12px 0;
 }
-.site-header :focus-visible { outline-color: var(--on-dark); }
 .header-inner {
   display: flex; align-items: center; justify-content: space-between;
   gap: 16px; flex-wrap: wrap;
 }
-.wordmark { display: inline-flex; text-decoration: none; }
-/* Lockup SVG has purple lettering, so it sits on a white pill for contrast on the dark band */
-.logo-chip {
-  display: inline-flex; align-items: center;
-  padding: 8px 16px;
-  background: var(--surface); border-radius: 12px;
-}
-.logo-chip img { width: auto; height: 34px; display: block; }
+.wordmark { display: inline-flex; align-items: center; }
+.wordmark img { width: auto; height: 52px; display: block; }
+
 .main-nav {
   display: flex; align-items: center; gap: 4px; flex-wrap: wrap;
   list-style: none;
@@ -23,12 +20,16 @@
 .main-nav a {
   display: inline-flex; align-items: center;
   min-height: var(--target); padding: 6px 14px;
-  color: var(--on-dark); text-decoration: none; font-weight: 500;
+  color: var(--ink); text-decoration: none; font-weight: 500;
   border-radius: var(--radius);
 }
-.main-nav a:hover { background: rgba(255, 255, 255, 0.12); color: var(--on-dark); }
+.main-nav a:hover { background: var(--tint); color: var(--ink); }
 .main-nav a[aria-current="page"] { text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 2px; }
 .main-nav .btn-follow {
-  background: var(--surface); color: var(--ink); margin-left: 8px; padding: 6px 20px;
+  background: var(--ink); color: var(--on-dark); margin-left: 8px; padding: 6px 20px;
 }
-.main-nav .btn-follow:hover { background: var(--teal-soft); color: var(--ink); }
+.main-nav .btn-follow:hover { background: var(--teal-strong); color: var(--on-dark); }
+
+@media (max-width: 600px) {
+  .wordmark img { height: 42px; }
+}
