@@ -6,19 +6,25 @@
   display: flex; align-items: center; justify-content: space-between;
   gap: 16px; flex-wrap: wrap; margin-bottom: 8px;
 }
-.reel-controls { display: flex; gap: 10px; }
+/* Arrows sit on the stage, vertically centred on the active card's 16:9 video, just inside its edges */
+.reel-body { position: relative; --reel-w: min(1100px, 92vw); }
+.reel-controls { position: absolute; left: 0; right: 0; top: calc(24px + var(--reel-w) * 0.28125); z-index: 5; pointer-events: none; }
 .reel-btn {
+  position: absolute; top: 0; transform: translateY(-50%); pointer-events: auto;
   display: inline-flex; align-items: center; justify-content: center;
-  width: var(--target); height: var(--target);
-  border-radius: 50%; border: 2px solid var(--teal);
-  background: var(--surface); color: var(--ink); cursor: pointer;
+  width: 52px; height: 52px;
+  border-radius: 50%; border: 2px solid var(--surface);
+  background: rgba(26, 58, 66, 0.72); color: var(--on-dark); cursor: pointer;
 }
-.reel-btn:hover { background: var(--ink); border-color: var(--ink); color: var(--on-dark); }
+.reel-btn[data-reel-prev] { left: calc(50% - var(--reel-w) / 2 + 14px); }
+.reel-btn[data-reel-next] { right: calc(50% - var(--reel-w) / 2 + 14px); }
+.reel-btn:hover { background: var(--ink); }
+.reel-btn:focus-visible { outline: 3px solid var(--on-dark); outline-offset: 2px; }
 
 .reel-stage {
   position: relative;
   /* Stage must have a height because cards are absolute: 16:9 video plus ~210px caption */
-  height: calc(min(1100px, 92vw) * 0.5625 + 210px);
+  height: calc(var(--reel-w) * 0.5625 + 210px);
   perspective: 2200px;
   touch-action: pan-y;
   cursor: grab;
@@ -27,7 +33,7 @@
 
 .reel-card {
   position: absolute; left: 50%; top: 24px;
-  width: min(1100px, 92vw);
+  width: var(--reel-w);
   background: var(--surface);
   border: 1px solid var(--tint);
   border-radius: var(--radius);
@@ -79,5 +85,6 @@
 .reel-links a { display: inline-flex; align-items: center; min-height: 32px; font-weight: 500; }
 
 @media (max-width: 600px) {
-  .reel-stage { height: calc(92vw * 0.5625 + 230px); }
+  .reel-body { --reel-w: 92vw; }
+  .reel-stage { height: calc(var(--reel-w) * 0.5625 + 230px); }
 }
