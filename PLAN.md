@@ -1,6 +1,6 @@
 # Disability Unfiltered - Build Plan
-Status: PHASE 1 LIVE at https://disability-stories-7ggs.onrender.com (hello@disabilityunfiltered.com.au Render account, service created 2026-08-21, build 5e5f81b). Awaiting Matt's review, social/listen URLs for src/_data/site.js, and sign-off before the domain is connected. Phase 2 (episodes) not started.
-Last updated: 2026-08-14
+Status: PHASE 1 LIVE at https://disabilityunfiltered.com.au (Render, hello@ account, domain connected 2026-08-23). Awaiting social/listen URLs for src/_data/site.js. Phase 2 (episodes) not started.
+Last updated: 2026-08-23
 
 ## 1. What this is
 
