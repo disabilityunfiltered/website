@@ -1,4 +1,4 @@
-/* Header and its bars are one deep teal block; white nav text, soft teal Follow button echoing the logo */
+/* Header and its bars are one deep teal block; white nav text, white Follow button, no hover change */
 .brand-bar { height: 16px; background: var(--ink); }
 
 .site-header {
@@ -25,9 +25,9 @@
 .main-nav a:hover { background: rgba(255, 255, 255, 0.12); color: var(--on-dark); }
 .main-nav a[aria-current="page"] { text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 2px; }
 .main-nav .btn-follow {
-  background: var(--teal-soft); color: var(--ink); margin-left: 8px; padding: 6px 20px;
+  background: var(--surface); color: var(--ink); margin-left: 8px; padding: 6px 20px;
 }
-.main-nav .btn-follow:hover { background: var(--on-dark); color: var(--ink); }
+.main-nav .btn-follow:hover { background: var(--surface); color: var(--ink); }
 
 @media (max-width: 600px) {
   .wordmark img { height: 40px; }
