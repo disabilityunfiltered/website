@@ -2,7 +2,7 @@
 layout: layouts/page.njk
 title: Be a Guest
 permalink: /be-a-guest/
-description: Share your story on Disability Stories. We want to hear from people with disability, families, support workers and providers.
+description: Share your story on Disability Unfiltered. We want to hear from people with disability, families, support workers and providers.
 ---
 
 This podcast only works because people trust us with their stories. If you have lived experience of disability, or you work in disability support and have something honest to say about how the system works, we want to hear from you.

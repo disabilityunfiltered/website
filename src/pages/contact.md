@@ -2,7 +2,7 @@
 layout: layouts/page.njk
 title: Contact
 permalink: /contact/
-description: Get in touch with the Disability Stories podcast.
+description: Get in touch with the Disability Unfiltered podcast.
 ---
 
 The fastest way to reach us is email:

@@ -2,10 +2,10 @@
 layout: layouts/page.njk
 title: About
 permalink: /about/
-description: What Disability Stories is, who we speak with, and why these conversations matter.
+description: What Disability Unfiltered is, who we speak with, and why these conversations matter.
 ---
 
-Disability Stories is a podcast sharing real conversations from across the disability community. We speak with people with disability, families, support workers, providers and others with lived or professional experience.
+Disability Unfiltered is a podcast sharing real conversations from across the disability community. We speak with people with disability, families, support workers, providers and others with lived or professional experience.
 
 We explore the stories, challenges, ideas and people shaping disability support in Australia, while also seeking out inspiring stories of resilience, achievement and positive change.
 

@@ -1,4 +1,4 @@
-# Disability Stories (disabilitystories.com.au)
+# Disability Unfiltered (disabilityunfiltered.com.au)
 
 Podcast brand site. Eleventy static site (JavaScript), deployed on Render. Content lives in content/, code in src/. Full plan and current status: PLAN.md.
 
@@ -29,4 +29,4 @@ Podcast brand site. Eleventy static site (JavaScript), deployed on Render. Conte
 - docs/architecture.md: how the build works (create in Phase 1).
 - docs/content-workflow.md: how to add an episode (create in Phase 2).
 - docs/deploy.md: Render, DNS, email (create in Phase 1).
-- Project email for all accounts: hello@disabilitystories.com.au
+- Project email for all accounts: hello@disabilityunfiltered.com.au

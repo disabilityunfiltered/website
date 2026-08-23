@@ -17,7 +17,7 @@ Source: verified against live heartsinaction.com.au 2026-08-14 (deep/mid teal fr
 
 ## Logo
 
-Masters in Logo/ (NOT in the build, never edit): "Disability Stories.svg" (horizontal lockup, transparent background) and disability_stories_logo_square_tight_1.png (3000px square, white background). In use: src/assets/logo-lockup.svg is the header logo, sitting on a white pill (.logo-chip) because its purple lettering has no contrast on the dark teal band; favicon-32.png, apple-touch-icon.png and og-image.png are generated from the PNG master. The square PNG's background is solid white, so anywhere it appears it sits on a white card, never directly on teal or purple. Regenerate derived sizes from the masters if the logo changes.
+Masters in Logo/ (NOT in the build, never edit): logo_header_4.svg (horizontal lockup, 3240x496, transparent background) and disability_unfiltered_logo_square_1.png (3000px square, white background). Older Disability Stories masters in the same folder are superseded. In use: src/assets/logo-lockup.svg is the header logo, sitting on a white pill (.logo-chip) because its purple lettering has no contrast on the dark teal band; favicon-32.png, apple-touch-icon.png and og-image.png are generated from the PNG master. The square PNG's background is solid white, so anywhere it appears it sits on a white card, never directly on teal or purple. Regenerate derived sizes from the masters if the logo changes.
 
 ## Type
 
@@ -25,7 +25,7 @@ DM Sans (Google Fonts), matching the HIA footer. Weights 400/500/700. No thin we
 
 ## Voice
 
-Official description (Matt, 2026-08-14): "Disability Stories is a podcast sharing real conversations from across the disability community. We speak with people with disability, families, support workers, providers and others with lived or professional experience. We explore the stories, challenges, ideas and people shaping disability support in Australia, while also seeking out inspiring stories of resilience, achievement and positive change. Our goal is to create honest conversations that inform, connect and give people a stronger voice."
+Official description (Matt, 2026-08-14): "Disability Unfiltered is a podcast sharing real conversations from across the disability community. We speak with people with disability, families, support workers, providers and others with lived or professional experience. We explore the stories, challenges, ideas and people shaping disability support in Australia, while also seeking out inspiring stories of resilience, achievement and positive change. Our goal is to create honest conversations that inform, connect and give people a stronger voice."
 
 Register: fact-forward, direct, warm through specifics not sentiment. Guests are experts on their own lives.
 Banned in UI copy: "brave", "overcame", "despite", "special". Say "Follow", never "Subscribe".

@@ -1,12 +1,12 @@
-# Disability Stories - Build Plan
-Status: PHASE 1 LIVE at https://disability-stories.onrender.com (deployed 2026-08-14, audit-fixed build 2c31638). Awaiting Matt's review, social/listen URLs for src/_data/site.js, and sign-off before the domain is connected. Phase 2 (episodes) not started.
+# Disability Unfiltered - Build Plan
+Status: PHASE 1 LIVE at https://disability-stories-7ggs.onrender.com (hello@disabilityunfiltered.com.au Render account, service created 2026-08-21, build 5e5f81b). Awaiting Matt's review, social/listen URLs for src/_data/site.js, and sign-off before the domain is connected. Phase 2 (episodes) not started.
 Last updated: 2026-08-14
 
 ## 1. What this is
 
-A podcast brand site at disabilitystories.com.au. The podcast interviews people with disabilities to honour their stories, surface inspiring journeys, and push for change in the disability sector (NDIS). The site must look like a serious brand from day one.
+A podcast brand site at disabilityunfiltered.com.au. The podcast interviews people with disabilities to honour their stories, surface inspiring journeys, and push for change in the disability sector (NDIS). The site must look like a serious brand from day one.
 
-Project email for all accounts: hello@disabilitystories.com.au
+Project email for all accounts: hello@disabilityunfiltered.com.au
 Existing channels: Instagram, Facebook, LinkedIn, YouTube.
 
 ## 2. Brand colours (verified 2026-08-14)
@@ -30,7 +30,7 @@ Rationale on record: Documents\Hearts In Action\Claudi AI\Research\CRO-Color-Des
 
 Why this and not a Node/Express web service:
 - Render static sites are free; a Node web service is USD 7+/month for zero benefit here. Nothing on this site needs a server: no logins, no database, no dynamic pages.
-- Static = fastest possible load and best SEO, which matters for a brand that wants to rank for disability stories.
+- Static = fastest possible load and best SEO, which matters for a brand that wants to rank for Disability Unfiltered.
 - No server to patch, crash, or cold-start.
 - Eleventy is JavaScript end to end (templates, config, data), satisfying the JavaScript requirement.
 - If a server is ever genuinely needed later (e.g. a contact form backend), add a tiny separate service then; do not start with one.
@@ -70,7 +70,7 @@ The audience includes the people the podcast honours. Target WCAG 2.2 AA minimum
 ## 6. Repository structure (designed for easy changes at any size)
 
 ```
-disability-stories/
+disability-unfiltered/
   CLAUDE.md              <- index + hard rules only, never content (cap 60 lines)
   PLAN.md                <- this file, replaced as decisions land
   docs/
@@ -105,15 +105,15 @@ Findability rules that keep changes cheap forever:
 4. Docs describe the CURRENT state only. Superseded material is deleted, not archived inside the doc.
 5. CLAUDE.md is an index plus hard rules, max 60 lines, and points to docs/ for everything else.
 
-## 8. Services and accounts (all under hello@disabilitystories.com.au)
+## 8. Services and accounts (all under hello@disabilityunfiltered.com.au)
 
 | Service | Purpose | Cost | Status |
 |---------|---------|------|--------|
-| Render static site | Hosting | Free | LIVE: disability-stories.onrender.com on the hello@ account; details in docs/deploy.md |
-| Domain disabilitystories.com.au | Purchased | Done | Registrar: ChemiCloud (domain only, never touch). DNS: Cloudflare Free, Matt's account. See "DNS facts" below |
+| Render static site | Hosting | Free | LIVE: disability-stories-7ggs.onrender.com on the hello@ account; details in docs/deploy.md |
+| Domain disabilityunfiltered.com.au | Purchased | Done | Registrar: ChemiCloud (domain only, never touch). DNS: Cloudflare Free, Matt's account. See "DNS facts" below |
 | Email hosting for hello@ | Mailboxes for the domain | Zoho | DONE per Matt 2026-08-14 |
 | Podcast host (RSS) | Feed for Apple/Spotify | Spotify for Creators: free | Account exists per Matt 2026-08-14 |
-| GitHub repo | Source of truth, Render deploys from it | Free | github.com/DisabilityStories/website (account: disabilitystories, NEVER seoraptorio) |
+| GitHub repo | Source of truth, Render deploys from it | Free | github.com/disabilityunfiltered/website (account: disabilityunfiltered, NEVER seoraptorio) |
 
 ### DNS facts (provided by Matt 2026-08-14, move to docs/deploy.md in Phase 1)
 
@@ -132,8 +132,8 @@ Findability rules that keep changes cheap forever:
 ## 10. Confirmed by Matt (2026-08-14)
 
 - Purple = #151E3F, the HIA footer background colour.
-- Email: Zoho already set up for hello@disabilitystories.com.au.
-- Podcast name: Disability Stories.
+- Email: Zoho already set up for hello@disabilityunfiltered.com.au.
+- Podcast name: Disability Unfiltered.
 - Spotify for Creators account already exists.
 
 ## 11. Open questions for Matt

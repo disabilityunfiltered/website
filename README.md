@@ -1,6 +1,6 @@
-# Disability Stories
+# Disability Unfiltered
 
-Website for the Disability Stories podcast: disabilitystories.com.au
+Website for the Disability Unfiltered podcast: disabilityunfiltered.com.au
 
 Real conversations from across the disability community in Australia.
 

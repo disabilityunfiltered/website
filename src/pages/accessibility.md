@@ -2,7 +2,7 @@
 layout: layouts/page.njk
 title: Accessibility statement
 permalink: /accessibility/
-description: Our accessibility commitments for disabilitystories.com.au.
+description: Our accessibility commitments for disabilityunfiltered.com.au.
 ---
 
 This site exists to share the voices of people with disability, so being usable by everyone is a core requirement, not an add-on.

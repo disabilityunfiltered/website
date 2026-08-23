@@ -1,7 +1,7 @@
 {
-  "name": "disability-stories",
+  "name": "disability-unfiltered",
   "version": "1.0.0",
-  "description": "Disability Stories podcast website - disabilitystories.com.au",
+  "description": "Disability Unfiltered podcast website - disabilityunfiltered.com.au",
   "type": "module",
   "private": true,
   "engines": {

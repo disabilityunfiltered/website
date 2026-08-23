@@ -1,9 +1,9 @@
-# Design brief - Disability Stories
+# Design brief - Disability Unfiltered
 Based on research completed 2026-08-14: teardowns of 7 acclaimed podcast sites (Radiolab, Huberman Lab, Diary of a CEO, 99% Invisible, SmartLess, Armchair Expert, On Being), podcast-platform guidance (Castos, Transistor, Buzzsprout, Lower Street, Podnews), and disability-sector design review (Scope UK, Australian Disability Network, Attitude NZ, Getty/Business Disability Forum imagery guidance, Stella Young's inspiration-porn critique). Full evidence trail: session notes 2026-08-14; key data points cited inline.
 
 ## The positioning insight
 
-No Australian disability podcast has a proper website. ListenABLE (the biggest, Dylan Alcott) has none at all, offers no transcripts, and none of the checked shows put transcripts anywhere. A genuinely accessible site with full transcripts makes Disability Stories the best-presented show in its space on day one, and transcripts carry proven SEO value: This American Life measured +6.68% search traffic and +4.36% inbound traffic after publishing its transcript archive (3Play Media case study).
+No Australian disability podcast has a proper website. ListenABLE (the biggest, Dylan Alcott) has none at all, offers no transcripts, and none of the checked shows put transcripts anywhere. A genuinely accessible site with full transcripts makes Disability Unfiltered the best-presented show in its space on day one, and transcripts carry proven SEO value: This American Life measured +6.68% search traffic and +4.36% inbound traffic after publishing its transcript archive (3Play Media case study).
 
 ## Homepage (proven pattern: 4+ of 7 acclaimed sites)
 
