@@ -10,7 +10,7 @@
   gap: 16px; flex-wrap: wrap;
 }
 .wordmark { display: inline-flex; align-items: center; }
-.wordmark img { width: auto; height: 39px; display: block; }
+.wordmark img { width: auto; height: 48px; display: block; }
 
 .main-nav {
   display: flex; align-items: center; gap: 4px; flex-wrap: wrap;
@@ -31,5 +31,5 @@
 .main-nav .btn-follow:hover { background: var(--teal-strong); color: var(--on-dark); }
 
 @media (max-width: 600px) {
-  .wordmark img { height: 32px; }
+  .wordmark img { height: 38px; }
 }
