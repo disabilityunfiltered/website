@@ -12,7 +12,7 @@
   --teal-strong: #3A6E77; /* links, hovers, secondary buttons (AA on ground AND tint) */
   --teal-soft: #8FC1C9;   /* tints, eyebrows on dark backgrounds */
   --tint: #EAF2F3;        /* light teal wash for alternating sections */
-  --purple: #484C75;      /* British Paints Pansy Paradise: footer, header bars. White 8.18:1, --on-dark-muted 5.5:1; --teal-soft only 4.15:1 so large text only */
+  --purple: #343755;      /* deep purple (Pansy Paradise darkened): footer, header bars, Follow button. White 11.4:1, --on-dark-muted 7.7:1, --teal-soft 5.9:1 */
   --on-dark: #FFFFFF;
   --on-dark-muted: #C9D6DB;
 
