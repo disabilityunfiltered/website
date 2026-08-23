@@ -1,5 +1,5 @@
-/* Purple bars above and below the cream header; nav text and Follow button share the purple */
-.brand-bar { height: 16px; background: var(--purple); }
+/* Deep teal bars above and below the cream header; nav text and Follow button are purple */
+.brand-bar { height: 16px; background: var(--ink); }
 
 .site-header {
   background: var(--cream);
@@ -10,7 +10,7 @@
   gap: 16px; flex-wrap: wrap;
 }
 .wordmark { display: inline-flex; align-items: center; }
-.wordmark img { width: auto; height: 52px; display: block; }
+.wordmark img { width: auto; height: 39px; display: block; }
 
 .main-nav {
   display: flex; align-items: center; gap: 4px; flex-wrap: wrap;
@@ -30,5 +30,5 @@
 .main-nav .btn-follow:hover { background: var(--teal-strong); color: var(--on-dark); }
 
 @media (max-width: 600px) {
-  .wordmark img { height: 42px; }
+  .wordmark img { height: 32px; }
 }
