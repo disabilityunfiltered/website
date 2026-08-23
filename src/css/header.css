@@ -60,3 +60,8 @@
 @media (max-width: 600px) {
   .wordmark img { height: 40px; }
 }
+/* Narrow phones: bars only, so logo and toggle share one row instead of wrapping */
+@media (max-width: 480px) {
+  .nav-toggle { padding: 6px 10px; }
+  .nav-toggle-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+}
