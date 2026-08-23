@@ -9,9 +9,9 @@
 | --text | #33424A | Body text | 9+:1 on ground |
 | --teal | #5A9CA6 | Decoration, borders, large fills ONLY | 2.9:1 - NEVER text on light |
 | --teal-strong | #3A6E77 | Links, hovers, interactive | 5.34:1 on ground, 5.03:1 on tint (AA; darkened from HIA's #3F7680, which failed on tint at 4.49:1) |
-| --teal-soft | #8FC1C9 | Tints, eyebrows on dark | 7.63:1 on purple |
+| --teal-soft | #8FC1C9 | Tints, eyebrows on dark, header Follow button fill | 7.63:1 on purple; --ink on it 6.4:1 |
 | --tint | #EAF2F3 | Alternating section wash, follow strip | |
-| --purple | #232539 | Footer, header Follow button (white outline on the teal header) | white on it: 15.05:1 (British Paints Pansy Paradise #484C75 hue, darkened to 18% lightness at Matt's request, 2026-08-23) |
+| --purple | #232539 | Footer | white on it: 15.05:1 (British Paints Pansy Paradise #484C75 hue, darkened to 18% lightness at Matt's request, 2026-08-23) |
 
 Source: teals verified against live heartsinaction.com.au 2026-08-14 (homepage inline styles); purple derived 2026-08-23 from the Pansy Paradise swatch rgb(72,76,117) at britishpaints.com.au/colours/colour-chart/purples/pansy-paradise/, same hue and saturation, darker.
 
