@@ -24,9 +24,9 @@ Podcast brand site. Eleventy static site (JavaScript), deployed on Render. Conte
 ## Where things are
 
 - PLAN.md: current plan, phase status, open questions.
-- docs/design-brief.md: research-backed design direction (done 2026-08-14).
-- docs/brand.md: verified palette, type, voice (create in Phase 1).
-- docs/architecture.md: how the build works (create in Phase 1).
-- docs/content-workflow.md: how to add an episode (create in Phase 2).
-- docs/deploy.md: Render, DNS, email (create in Phase 1).
+- docs/design-brief.md: research-backed design direction (2026-08-14).
+- docs/brand.md: palette with contrast ratios, logo masters, type, voice.
+- docs/architecture.md: how the build works, where each kind of change lives.
+- docs/deploy.md: GitHub, Render, DNS, Resend email signup and its Worker.
+- docs/content-workflow.md: how to add an episode (Phase 2, not yet written).
 - Project email for all accounts: hello@disabilityunfiltered.com.au

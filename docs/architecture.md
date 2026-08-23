@@ -13,9 +13,9 @@ Eleventy 3 (ESM) static site. Node 24. Build: `npm run build` (output `_site/`).
 ## CSS
 
 - `src/css/tokens.css` holds every colour, font, spacing and size token. No hex codes anywhere else.
-- One CSS file per component, same base name as its template (header.css/header.njk). Page-scoped styles use the page's name (home.css styles index.njk's hero/latest/mission sections). `base.css` holds reset, typography, buttons, focus states, utilities.
+- One CSS file per component, same base name as its template (header.css/header.njk). Page-scoped styles use the page's name (home.css styles index.njk's hero). `base.css` holds reset, typography, buttons, focus states, utilities.
 - CSS is passthrough-copied to `/css/`; each file is linked in base.njk. Adding a component = adding one link tag there.
-- JS lives in `src/js/`, one file per interactive component, passthrough-copied to `/js/`, loaded with a deferred script tag inside the component's own .njk. Currently only episode-reel.js (the 3D episode fan: buttons, drag, arrow keys). Interactivity is optional enhancement; content must work without JS.
+- JS lives in `src/js/`, one file per interactive component, passthrough-copied to `/js/`, loaded with a deferred script tag inside the component's own .njk: episode-reel.js (3D episode fan: buttons, drag, arrow keys), header-nav.js (three-bar menu under 860px), subscribe-form.js (fetch submit and status messages). Interactivity is optional enhancement; every component works without JS.
 
 ## Findability contract
 
@@ -24,6 +24,10 @@ Eleventy 3 (ESM) static site. Node 24. Build: `npm run build` (output `_site/`).
 - "Change a social/listen link" = `src/_data/site.js`. Nothing else.
 - "Change page copy" = the one file in `src/pages/`.
 
+## Backend
+
+The only server-side code is `workers/subscribe/` (Cloudflare Worker for the email signup; config in its wrangler.toml, operations in docs/deploy.md). It is deployed separately with wrangler and is not part of the Eleventy build. `site.subscribeUrl` in src/_data/site.js is the only place the site references it.
+
 ## Build config
 
-`eleventy.config.js`: passthrough copy for css/assets, episodes collection, `readableDate` filter (en-AU), `year` shortcode. `.eleventyignore` keeps docs/, PLAN.md, CLAUDE.md, README.md out of the build.
+`eleventy.config.js`: passthrough copy for css/js/assets/robots.txt, episodes collection, `readableDate` filter (en-AU), `year` shortcode. `.eleventyignore` keeps docs/, workers/, PLAN.md, CLAUDE.md, README.md out of the build.

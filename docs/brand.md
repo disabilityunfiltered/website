@@ -11,13 +11,13 @@
 | --teal-strong | #3A6E77 | Links, hovers, interactive | 5.34:1 on ground, 5.03:1 on tint (AA; darkened from HIA's #3F7680, which failed on tint at 4.49:1) |
 | --teal-soft | #8FC1C9 | Tints, eyebrows on dark | 7.63:1 on purple |
 | --tint | #EAF2F3 | Alternating section wash, follow strip | |
-| --purple | #232539 | Footer | white on it: 15.05:1 (British Paints Pansy Paradise #484C75 hue, darkened to 18% lightness at Matt's request, 2026-08-23) |
+| --purple | #232539 | Footer | white on it: 15.05:1 (British Paints Pansy Paradise hue, darkened) |
 
-Source: teals verified against live heartsinaction.com.au 2026-08-14 (homepage inline styles); purple derived 2026-08-23 from the Pansy Paradise swatch rgb(72,76,117) at britishpaints.com.au/colours/colour-chart/purples/pansy-paradise/, same hue and saturation, darker.
+Source: teals from the live heartsinaction.com.au homepage (2026-08-14); purple from British Paints Pansy Paradise rgb(72,76,117) at 18% lightness (Matt, 2026-08-23). Header: --ink block with white nav text and a white Follow button; three-bar menu under 860px.
 
 ## Logo
 
-Masters in Logo/ (NOT in the build, never edit): 1logo_header_reversed.svg (horizontal lockup for the dark teal header, 3240x496, transparent background; logo_header_4.svg is the light-background version) and disability_unfiltered_logo_square_1.png (3000px square, white background). Older Disability Stories masters in the same folder are superseded. In use: src/assets/logo-lockup.svg is the reversed header logo on the deep teal header; favicon-32.png, apple-touch-icon.png and og-image.png are generated from the PNG master. The square PNG's background is solid white, so anywhere it appears it sits on a white card, never directly on teal or purple. Regenerate derived sizes from the masters if the logo changes.
+Masters in Logo/ (not in the build, never edit): 1logo_header_reversed.svg (lockup for the dark header, 3240x496, transparent) and disability_unfiltered_logo_square_1.png (3000px square, white background). Other files in Logo/ are alternates or superseded Disability Stories masters. In use: src/assets/logo-lockup.svg (copy of the reversed lockup, 50px tall in the header, 40px on phones); favicon-32.png, apple-touch-icon.png and og-image.png are resized from the square PNG. The square PNG has a solid white background, so it only ever sits on white. Regenerate the derived files if a master changes.
 
 ## Type
 

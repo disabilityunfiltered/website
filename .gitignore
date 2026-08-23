@@ -3,3 +3,6 @@ _site/
 package-lock.json.bak
 .DS_Store
 Thumbs.db
+
+# Duplicate of Logo/logo_header_4.svg left at the root; keep out of the repo
+/logo_header_4.svg

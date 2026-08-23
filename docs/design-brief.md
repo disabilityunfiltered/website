@@ -10,9 +10,8 @@ No Australian disability podcast has a proper website. ListenABLE (the biggest, 
 1. Hero: an identity statement saying what the show is and who it honours, plus release cadence. Never a generic welcome. Latest episode sits above the fold with an embedded player, following the 99% Invisible / On Being model, which beat the weak signpost-only sites.
 2. Latest episodes as a card grid (3 cards: art, title, guest, date, transcript link visible on the card).
 3. Follow band: "Follow the show" with Apple Podcasts, Spotify, YouTube badges. Wording is "Follow", never "Subscribe": Edison Research found 47% of non-listeners think subscribing costs money; Apple and Spotify both changed their wording for this reason.
-4. Mission strip: one blunt, fact-led sentence about why these stories matter (Scope UK's campaigning register).
-5. Newsletter capture with a stated value promise (present on 5 of 7 acclaimed sites).
-6. Footer: social icons (Instagram, Facebook, LinkedIn, YouTube), platform badges repeated, accessibility statement link, hello@ email.
+4. Newsletter capture with a stated value promise (present on 5 of 7 acclaimed sites).
+5. Footer: social icons (Instagram, Facebook, LinkedIn, YouTube), platform badges repeated, accessibility statement link, hello@ email.
 
 ## Episode page (the crown jewel, On Being model)
 
@@ -25,7 +24,7 @@ Episodes, About, Be a Guest, Contact, plus a visually distinct Follow button. Ac
 ## Visual language
 
 - Restraint is the proven disability-sector register (Scope, Australian Disability Network): one strong colour on a high-contrast neutral ground, nothing "medical", nothing charity-appeal.
-- Ground: warm white #F9F7F3. Headings/nav: deep teal #1A3A42. Interactive elements: mid teal #5A9CA6 (hover #3F7680). Footer and depth blocks: deep purple #151E3F. Soft teal #8FC1C9 for tints only. Accent used sparingly.
+- Palette and contrast rules: docs/brand.md (the only place hex values live outside tokens.css).
 - Photography: real guests, named, photographed as experts on their own lives. Never stock. Banned: victory poses, finish-line shots, standing-next-to-the-wheelchair framing, soft-focus uplift (Getty Disability Collection and Business Disability Forum guidance; under 10% of disabled people use wheelchairs, up to 80% of disabilities are invisible, and imagery should reflect that).
 - Type: plain-language sans-serif, generous sizes, no thin weights.
 
