@@ -20,6 +20,7 @@ Podcast brand site. Eleventy static site (JavaScript), deployed on Render. Conte
 3. Each fact lives in exactly one file; elsewhere, link to it.
 4. Docs describe the current state only. Superseded text is deleted, not archived in place.
 5. This file stays an index plus rules. Content, evidence, and how-tos belong in docs/.
+6. Docs move with the code. Any commit that changes behaviour, infrastructure, accounts or workflow updates the matching doc in the same commit; a doc-less change is incomplete. Before ending a session, re-read PLAN.md status, open questions, and every doc touched, delete anything stale, and confirm each file is under its cap.
 
 ## Where things are
 
