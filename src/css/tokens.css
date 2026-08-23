@@ -12,7 +12,7 @@
   --teal-strong: #3A6E77; /* links, hovers, secondary buttons (AA on ground AND tint) */
   --teal-soft: #8FC1C9;   /* tints, eyebrows on dark backgrounds */
   --tint: #EAF2F3;        /* light teal wash for alternating sections */
-  --teal-deep: #0B393B;   /* header band between the purple bars (Matt, 2026-08-23). White on it 13+:1 */
+  --cream: #F2F2E9;       /* header band between the purple bars (Matt, 2026-08-23). --purple on it 13+:1 */
   --purple: #232539;      /* deep purple (Pansy Paradise hue, 18% lightness): footer, header bars, Follow button. White 15.05:1, --on-dark-muted 10.12:1, --teal-soft 7.63:1 */
   --on-dark: #FFFFFF;
   --on-dark-muted: #C9D6DB;
