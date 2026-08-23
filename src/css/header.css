@@ -47,12 +47,14 @@
   .has-nav-toggle .nav-toggle:not([hidden]) { display: inline-flex; }
   .has-nav-toggle .main-nav { display: none; }
   .has-nav-toggle .main-nav.is-open { display: flex; }
+  /* Even rhythm: 12px header padding above the logo row, 12px gap, 12px below the divider, 12px under the last item */
+  .header-inner { gap: 12px; }
   .main-nav.is-open {
     flex-direction: column; align-items: stretch; gap: 2px;
-    width: 100%; padding-top: 8px; border-top: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%; padding-top: 12px; border-top: 1px solid rgba(255, 255, 255, 0.2);
   }
   .main-nav.is-open a { width: 100%; }
-  .main-nav.is-open .btn-follow { margin: 8px 0 4px; justify-content: center; }
+  .main-nav.is-open .btn-follow { margin: 8px 0 0; justify-content: center; }
   .site-header nav { flex-basis: 100%; }
 }
 @media (max-width: 600px) {
