@@ -17,7 +17,8 @@
 
 .reel-stage {
   position: relative;
-  height: 960px;
+  /* Stage must have a height because cards are absolute: 16:9 video plus ~210px caption */
+  height: calc(min(1100px, 92vw) * 0.5625 + 210px);
   perspective: 2200px;
   touch-action: pan-y;
   cursor: grab;
@@ -26,11 +27,11 @@
 
 .reel-card {
   position: absolute; left: 50%; top: 24px;
-  width: min(960px, 92vw);
+  width: min(1100px, 92vw);
   background: var(--surface);
   border: 1px solid var(--tint);
   border-radius: var(--radius);
-  padding: 0 40px 40px;
+  padding: 0 32px 28px;
   box-shadow: 0 18px 40px rgba(21, 30, 63, 0.16);
   transition: transform 0.45s ease, opacity 0.45s ease;
   opacity: 0; pointer-events: none;
@@ -40,8 +41,8 @@
 .reel-card.is-active { box-shadow: 0 24px 56px rgba(21, 30, 63, 0.28); }
 
 .reel-art {
-  margin: 0 -40px 26px;
-  height: 400px; border-radius: var(--radius) var(--radius) 0 0;
+  margin: 0 -32px 18px;
+  aspect-ratio: 16 / 9; border-radius: var(--radius) var(--radius) 0 0;
   background: linear-gradient(135deg, var(--ink) 0%, var(--teal-strong) 60%, var(--teal) 100%);
   display: flex; align-items: center; justify-content: center;
 }
@@ -50,7 +51,7 @@
 }
 /* In-card video: thumbnail first, swaps to a playable embed (fullscreen enabled) */
 .reel-video {
-  margin: 0 -40px 26px;
+  margin: 0 -32px 18px;
   aspect-ratio: 16 / 9;
   border-radius: var(--radius) var(--radius) 0 0;
   overflow: hidden; background: var(--ink);
@@ -78,6 +79,5 @@
 .reel-links a { display: inline-flex; align-items: center; min-height: 32px; font-weight: 500; }
 
 @media (max-width: 600px) {
-  .reel-stage { height: 680px; }
-  .reel-art { height: 220px; }
+  .reel-stage { height: calc(92vw * 0.5625 + 230px); }
 }
