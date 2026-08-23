@@ -1,5 +1,6 @@
+/* Same section rhythm as the hero above and below */
 .episode-reel {
-  padding: var(--space-section) 0 0;
+  padding: var(--space-section) 0;
   overflow: hidden;
 }
 .reel-head {
@@ -24,7 +25,7 @@
 .reel-stage {
   position: relative;
   /* Stage must have a height because cards are absolute: 16:9 video plus ~210px caption */
-  height: calc(var(--reel-w) * 0.5625 + 210px);
+  height: calc(var(--reel-w) * 0.5625 + 180px);
   perspective: 2200px;
   touch-action: pan-y;
   cursor: grab;
@@ -86,5 +87,5 @@
 
 @media (max-width: 600px) {
   .reel-body { --reel-w: 92vw; }
-  .reel-stage { height: calc(var(--reel-w) * 0.5625 + 230px); }
+  .reel-stage { height: calc(var(--reel-w) * 0.5625 + 200px); }
 }
