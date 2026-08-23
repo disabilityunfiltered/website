@@ -9,6 +9,10 @@ description: Follow Disability Unfiltered on your favourite podcast app and soci
     <h1>Follow the show</h1>
     <p>Following is free, always. New episodes land automatically in whichever app you use.</p>
 
+    <h2>Email updates</h2>
+    <p>Get one email when each new episode is out.</p>
+    {% include "components/subscribe-form.njk" %}
+
     <h2>Listen</h2>
     {% if site.listen.apple or site.listen.spotify or site.listen.youtube %}
     <ul class="listen-badges listen-badges-page">
@@ -32,7 +36,5 @@ description: Follow Disability Unfiltered on your favourite podcast app and soci
     <p class="empty-state">Social channel links are coming shortly.</p>
     {% endif %}
 
-    <h2>Email updates</h2>
-    <p><a class="btn btn-primary" href="mailto:{{ site.email }}?subject=Keep%20me%20posted%20about%20new%20episodes">Get new episodes by email</a></p>
   </div>
 </div>

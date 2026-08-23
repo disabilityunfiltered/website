@@ -1,0 +1,21 @@
+/* Email signup form (components/subscribe-form.njk) */
+.subscribe-form { max-width: 560px; }
+.subscribe-form > label { display: block; font-weight: 500; margin-bottom: 6px; }
+.subscribe-row { display: flex; gap: 10px; flex-wrap: wrap; }
+.subscribe-row input {
+  flex: 1 1 240px; min-height: var(--target); padding: 8px 14px;
+  font: inherit; color: var(--text); background: var(--surface);
+  border: 2px solid var(--teal); border-radius: var(--radius);
+}
+.subscribe-row input:focus-visible { outline: 3px solid var(--purple); outline-offset: 2px; }
+.subscribe-row input[aria-invalid="true"] { border-color: var(--purple); }
+.subscribe-row .btn { flex: 0 0 auto; }
+
+/* Honeypot: invisible to people, present for bots */
+.subscribe-trap { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+.subscribe-status { margin-top: 10px; font-weight: 500; min-height: 1.5em; }
+.subscribe-status[data-status="ok"] { color: var(--teal-strong); }
+.subscribe-status[data-status="invalid"],
+.subscribe-status[data-status="error"] { color: var(--purple); }
+.subscribe-note { margin-top: 6px; font-size: var(--size-small); color: var(--text); }

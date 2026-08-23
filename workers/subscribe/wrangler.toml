@@ -1,0 +1,17 @@
+name = "disability-unfiltered-subscribe"
+main = "src/index.js"
+compatibility_date = "2026-08-01"
+workers_dev = false
+
+routes = [
+  { pattern = "subscribe.disabilityunfiltered.com.au", custom_domain = true }
+]
+
+[vars]
+SITE_URL = "https://disabilityunfiltered.com.au"
+RESEND_SEGMENT_ID = "680261d9-7d47-4431-90a1-7ad3154b158b"
+FROM_ADDRESS = "Disability Unfiltered <hello@disabilityunfiltered.com.au>"
+REPLY_TO = "hello@disabilityunfiltered.com.au"
+
+# Secret (never in this file): RESEND_API_KEY
+#   npx wrangler secret put RESEND_API_KEY

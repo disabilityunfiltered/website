@@ -1,0 +1,15 @@
+{# Email signup. Posts to the Cloudflare Worker in site.subscribeUrl; works without JS (worker redirects back with ?subscribe=ok|invalid|error). #}
+<form class="subscribe-form" id="email" method="post" action="{{ site.subscribeUrl }}" novalidate>
+  <label for="subscribe-email">Email address</label>
+  <div class="subscribe-row">
+    <input id="subscribe-email" name="email" type="email" autocomplete="email" inputmode="email" required spellcheck="false">
+    <button class="btn btn-primary" type="submit">Get Episodes By Email</button>
+  </div>
+  <div class="subscribe-trap" aria-hidden="true">
+    <label for="subscribe-website">Leave this field empty</label>
+    <input id="subscribe-website" name="website" type="text" tabindex="-1" autocomplete="off">
+  </div>
+  <p class="subscribe-status" role="status" aria-live="polite" data-status></p>
+  <p class="subscribe-note">One email per new episode, nothing else. Unsubscribe any time.</p>
+</form>
+<script src="/js/subscribe-form.js" defer></script>
