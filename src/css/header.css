@@ -1,8 +1,8 @@
-/* Purple bars above and below the cream header; nav text and Follow button share the purple */
+/* Purple bars above and below the light teal header; nav text and Follow button share the purple */
 .brand-bar { height: 16px; background: var(--purple); }
 
 .site-header {
-  background: var(--cream);
+  background: var(--tint);
   padding: 12px 0;
 }
 .header-inner {
