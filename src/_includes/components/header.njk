@@ -7,8 +7,8 @@
     <nav aria-label="Main">
       <ul class="main-nav">
         <li><a href="/episodes/"{% if '/episodes/' in page.url %} aria-current="page"{% endif %}>Episodes</a></li>
-        <li><a href="/about/"{% if page.url == '/about/' %} aria-current="page"{% endif %}>About</a></li>
         <li><a href="/be-a-guest/"{% if page.url == '/be-a-guest/' %} aria-current="page"{% endif %}>Be a Guest</a></li>
+        <li><a href="/about/"{% if page.url == '/about/' %} aria-current="page"{% endif %}>About</a></li>
         <li><a href="/contact/"{% if page.url == '/contact/' %} aria-current="page"{% endif %}>Contact</a></li>
         <li><a class="btn-follow" href="mailto:{{ site.email }}?subject=Keep%20me%20posted%20about%20new%20episodes">Get episodes by email</a></li>
       </ul>
