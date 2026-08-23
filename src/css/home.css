@@ -8,10 +8,3 @@
 .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 32px; }
 
 /* Bands below the reel stack flush: no outer margins between them */
-.mission-strip {
-  background: var(--ink); color: var(--on-dark);
-  padding: 48px 0;
-}
-.mission-strip p {
-  font-size: 1.3rem; line-height: 1.5; max-width: 46ch; font-weight: 500;
-}

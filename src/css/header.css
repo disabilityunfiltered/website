@@ -19,7 +19,7 @@
 .main-nav a {
   display: inline-flex; align-items: center;
   min-height: var(--target); padding: 6px 14px;
-  color: var(--purple); text-decoration: none; font-weight: 500;
+  color: var(--purple); text-decoration: none; font-weight: 500; font-size: 1.22rem;
   border-radius: var(--radius);
 }
 .main-nav a:hover { background: var(--surface); color: var(--purple); }
