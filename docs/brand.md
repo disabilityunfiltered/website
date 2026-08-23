@@ -9,11 +9,11 @@
 | --text | #33424A | Body text | 9+:1 on ground |
 | --teal | #5A9CA6 | Decoration, borders, large fills ONLY | 2.9:1 - NEVER text on light |
 | --teal-strong | #3A6E77 | Links, hovers, interactive | 5.34:1 on ground, 5.03:1 on tint (AA; darkened from HIA's #3F7680, which failed on tint at 4.49:1) |
-| --teal-soft | #8FC1C9 | Tints, eyebrows on dark | 8.2:1 on purple |
+| --teal-soft | #8FC1C9 | Tints, large/bold text on dark only | 4.15:1 on purple: fails AA for small text, use --on-dark-muted (5.5:1) there |
 | --tint | #EAF2F3 | Alternating section wash | |
-| --purple | #151E3F | Footer, depth blocks | white on it: 16:1 |
+| --purple | #484C75 | Footer, header bars above and below the lockup | white on it: 8.18:1 (British Paints Pansy Paradise, chosen by Matt 2026-08-23) |
 
-Source: verified against live heartsinaction.com.au 2026-08-14 (deep/mid teal from homepage inline styles; purple from footer --ft-deep).
+Source: teals verified against live heartsinaction.com.au 2026-08-14 (homepage inline styles); purple replaced 2026-08-23 with the swatch rgb(72,76,117) from britishpaints.com.au/colours/colour-chart/purples/pansy-paradise/.
 
 ## Logo
 

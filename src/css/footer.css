@@ -17,12 +17,12 @@
 .footer-mission { color: var(--on-dark-muted); max-width: 34ch; margin-top: 8px; }
 
 .site-footer h2 {
-  color: var(--teal-soft); font-size: 0.875rem;
+  color: var(--on-dark-muted); font-size: 0.875rem;
   text-transform: uppercase; letter-spacing: 0.14em; margin-bottom: 12px;
 }
 .site-footer ul { list-style: none; }
 .site-footer a { color: var(--on-dark); }
-.site-footer a:hover { color: var(--teal-soft); }
+.site-footer a:hover { color: var(--on-dark-muted); }
 .footer-nav a, .footer-contact a {
   display: inline-flex; align-items: center; min-height: 32px;
 }
