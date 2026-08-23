@@ -29,6 +29,32 @@
 }
 .main-nav .btn-follow:hover { background: var(--surface); color: var(--ink); }
 
+/* Three-bar toggle (js/header-nav.js reveals it; hidden attribute keeps it out of no-JS pages) */
+.nav-toggle {
+  display: none; align-items: center; gap: 10px;
+  min-height: var(--target); padding: 6px 12px;
+  background: none; border: 2px solid rgba(255, 255, 255, 0.6); border-radius: var(--radius);
+  color: var(--on-dark); font: inherit; font-weight: 500; font-size: 1.22rem; cursor: pointer;
+}
+.nav-toggle:focus-visible { outline: 3px solid var(--on-dark); outline-offset: 2px; }
+.nav-toggle-bars { display: inline-flex; flex-direction: column; gap: 5px; width: 24px; }
+.nav-toggle-bars span { display: block; height: 3px; border-radius: 2px; background: currentColor; }
+.nav-toggle[aria-expanded="true"] .nav-toggle-bars span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.nav-toggle[aria-expanded="true"] .nav-toggle-bars span:nth-child(2) { opacity: 0; }
+.nav-toggle[aria-expanded="true"] .nav-toggle-bars span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+@media (max-width: 860px) {
+  .has-nav-toggle .nav-toggle:not([hidden]) { display: inline-flex; }
+  .has-nav-toggle .main-nav { display: none; }
+  .has-nav-toggle .main-nav.is-open { display: flex; }
+  .main-nav.is-open {
+    flex-direction: column; align-items: stretch; gap: 2px;
+    width: 100%; padding-top: 8px; border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .main-nav.is-open a { width: 100%; }
+  .main-nav.is-open .btn-follow { margin: 8px 0 4px; justify-content: center; }
+  .site-header nav { flex-basis: 100%; }
+}
 @media (max-width: 600px) {
   .wordmark img { height: 40px; }
 }

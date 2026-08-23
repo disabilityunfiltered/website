@@ -4,8 +4,13 @@
     <a class="wordmark" href="/">
       <img src="/assets/logo-lockup.svg" alt="Disability Unfiltered" width="3240" height="496">
     </a>
+    {# Three-bar toggle, shown on small screens only (header.css). Without JS the menu is simply always open. #}
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" hidden>
+      <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span class="nav-toggle-label">Menu</span>
+    </button>
     <nav aria-label="Main">
-      <ul class="main-nav">
+      <ul class="main-nav" id="main-nav">
         <li><a href="/episodes/"{% if '/episodes/' in page.url %} aria-current="page"{% endif %}>Episodes</a></li>
         <li><a href="/be-a-guest/"{% if page.url == '/be-a-guest/' %} aria-current="page"{% endif %}>Be a Guest</a></li>
         <li><a href="/about/"{% if page.url == '/about/' %} aria-current="page"{% endif %}>About</a></li>
@@ -16,3 +21,4 @@
   </div>
 </header>
 <div class="brand-bar" aria-hidden="true"></div>
+<script src="/js/header-nav.js" defer></script>
