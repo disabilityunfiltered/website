@@ -1,8 +1,8 @@
-/* Deep teal bars above and below the cream header; nav text and Follow button are purple */
+/* Header and its bars are one deep teal block; white nav text, outlined purple Follow button */
 .brand-bar { height: 16px; background: var(--ink); }
 
 .site-header {
-  background: var(--cream);
+  background: var(--ink);
   padding: 12px 0;
 }
 .header-inner {
@@ -19,13 +19,14 @@
 .main-nav a {
   display: inline-flex; align-items: center;
   min-height: var(--target); padding: 6px 14px;
-  color: var(--purple); text-decoration: none; font-weight: 500; font-size: 1.22rem;
+  color: var(--on-dark); text-decoration: none; font-weight: 500; font-size: 1.22rem;
   border-radius: var(--radius);
 }
-.main-nav a:hover { background: var(--surface); color: var(--purple); }
+.main-nav a:hover { background: rgba(255, 255, 255, 0.12); color: var(--on-dark); }
 .main-nav a[aria-current="page"] { text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 2px; }
 .main-nav .btn-follow {
   background: var(--purple); color: var(--on-dark); margin-left: 8px; padding: 6px 20px;
+  border: 2px solid var(--on-dark);
 }
 .main-nav .btn-follow:hover { background: var(--teal-strong); color: var(--on-dark); }
 

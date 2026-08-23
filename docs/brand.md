@@ -5,20 +5,19 @@
 | Token | Hex | Use | Contrast rule |
 |-------|-----|-----|---------------|
 | --ground | #F9F7F3 | Page background | |
-| --ink | #1A3A42 | Headings, nav, primary buttons | 11.3:1 on ground |
+| --ink | #1A3A42 | Headings, header block, primary buttons | 11.3:1 on ground |
 | --text | #33424A | Body text | 9+:1 on ground |
 | --teal | #5A9CA6 | Decoration, borders, large fills ONLY | 2.9:1 - NEVER text on light |
 | --teal-strong | #3A6E77 | Links, hovers, interactive | 5.34:1 on ground, 5.03:1 on tint (AA; darkened from HIA's #3F7680, which failed on tint at 4.49:1) |
 | --teal-soft | #8FC1C9 | Tints, eyebrows on dark | 7.63:1 on purple |
 | --tint | #EAF2F3 | Alternating section wash, follow strip | |
-| --cream | #F2F2E9 | Header band between the purple bars | --purple on it 13.5:1 |
-| --purple | #232539 | Footer, header Follow button, nav text on cream | white on it: 15.05:1 (British Paints Pansy Paradise #484C75 hue, darkened to 18% lightness at Matt's request, 2026-08-23) |
+| --purple | #232539 | Footer, header Follow button (white outline on the teal header) | white on it: 15.05:1 (British Paints Pansy Paradise #484C75 hue, darkened to 18% lightness at Matt's request, 2026-08-23) |
 
 Source: teals verified against live heartsinaction.com.au 2026-08-14 (homepage inline styles); purple derived 2026-08-23 from the Pansy Paradise swatch rgb(72,76,117) at britishpaints.com.au/colours/colour-chart/purples/pansy-paradise/, same hue and saturation, darker.
 
 ## Logo
 
-Masters in Logo/ (NOT in the build, never edit): logo_header_4.svg (horizontal lockup, 3240x496, transparent background) and disability_unfiltered_logo_square_1.png (3000px square, white background). Older Disability Stories masters in the same folder are superseded. In use: src/assets/logo-lockup.svg is the header logo, sitting on a white pill (.logo-chip) because its purple lettering has no contrast on the dark teal band; favicon-32.png, apple-touch-icon.png and og-image.png are generated from the PNG master. The square PNG's background is solid white, so anywhere it appears it sits on a white card, never directly on teal or purple. Regenerate derived sizes from the masters if the logo changes.
+Masters in Logo/ (NOT in the build, never edit): 1logo_header_reversed.svg (horizontal lockup for the dark teal header, 3240x496, transparent background; logo_header_4.svg is the light-background version) and disability_unfiltered_logo_square_1.png (3000px square, white background). Older Disability Stories masters in the same folder are superseded. In use: src/assets/logo-lockup.svg is the reversed header logo on the deep teal header; favicon-32.png, apple-touch-icon.png and og-image.png are generated from the PNG master. The square PNG's background is solid white, so anywhere it appears it sits on a white card, never directly on teal or purple. Regenerate derived sizes from the masters if the logo changes.
 
 ## Type
 
