@@ -19,7 +19,7 @@ Source: teals from the live heartsinaction.com.au homepage (2026-08-14); purple 
 
 Masters in Logo/ (not in the build, never edit): 1logo_header_reversed.svg (lockup for the dark header, 3240x496, transparent) and disability_unfiltered_logo_square_1.png (3000px square, white background). Other files in Logo/ are alternates or superseded Disability Stories masters. In use: src/assets/logo-lockup.svg (copy of the reversed lockup, 50px tall in the header, 40px on phones); favicon-32.png, apple-touch-icon.png and og-image.png are resized from the square PNG. The square PNG has a solid white background, so it only ever sits on white. Regenerate the derived files if a master changes.
 
-Sponsor logo (homepage sponsor strip): src/assets/sponsor-hearts-in-action.png (720x167, transparent) is resized from the HIA master "logo PNG 2.png" in Documents\Hearts In Action\Logo & Social Media\Logo. Shown at 300px wide max, linking to heartsinaction.com.au.
+Sponsor logo (homepage sponsor strip): src/assets/sponsor-hearts-in-action.svg is a copy of the HIA master hearts-in-action-horizontal.svg in Documents\Hearts In Action\Logo & Social Media\Logo - Redone (em dash in its title replaced per the no-em-dash rule). Shown at 300px wide max, linking to heartsinaction.com.au.
 
 ## Type
 
