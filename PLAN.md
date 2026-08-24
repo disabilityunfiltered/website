@@ -1,5 +1,5 @@
 # Disability Unfiltered - Build Plan
-Status: PHASE 1 LIVE at https://disabilityunfiltered.com.au with email signup. Phase 2: episode template and content model built (docs/content-workflow.md); first real episode and announcement email outstanding. Last updated 2026-08-23.
+Status: PHASE 1 LIVE at https://disabilityunfiltered.com.au with email signup. Phase 2: episode template and content model built (docs/content-workflow.md); first real episode and announcement email outstanding. Last updated 2026-08-25.
 
 ## 1. What this is
 
@@ -40,7 +40,13 @@ WCAG 2.2 AA minimum: full transcript on every episode page, every colour pair co
 
 1. Phase 1, foundation: DONE. Live site, brand system, pages, domain, email signup with welcome email.
 2. Phase 2, episodes: DONE content model, episode template (YouTube embed, audio player, listen badges, summary, guest bio, chapters, full transcript, share, older/newer), episodes index, docs/content-workflow.md. REMAINING: first real episode, and automatic episode announcement email (GitHub Action sends a Resend Broadcast when a new episode file lands).
-3. Phase 3, growth: OG/social share images per episode, JSON-LD PodcastSeries/PodcastEpisode schema, sitemap, analytics (privacy-respecting).
+3. Phase 3, SEO and growth (researched 2026-08-25; ordered by impact):
+   1. Add rel="sponsored" to the Hearts In Action link in the sponsor strip. Google's spam policy requires it on links given for sponsorship; a followed link under a "sponsored by" label is the exact pattern it targets. One-line fix, do first.
+   2. sitemap.xml template, then register the domain in Google Search Console and Bing Webmaster Tools and submit it.
+   3. JSON-LD schema in the layouts, filled from front matter: PodcastSeries on the home page, PodcastEpisode on each episode page. Also feeds AI search (ChatGPT/Perplexity/AI Overviews), which cites well-structured podcast pages.
+   4. Episode content conventions (add to docs/content-workflow.md when proven): titles written as what a person would search, summary/show notes that answer real questions, transcripts broken into short sections with keyworded headings. Transcripts are the single biggest podcast SEO asset and already a launch rule.
+   5. Backlinks: DU is a fresh domain with zero authority. heartsinaction.com.au should link to disabilityunfiltered.com.au (editorial link, that direction is fine followed), and every guest gets asked to link their episode page: the natural podcast link-building engine.
+   6. Per-episode OG share images; privacy-respecting analytics.
 
 ## 7. Open questions for Matt
 
