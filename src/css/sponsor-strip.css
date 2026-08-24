@@ -8,6 +8,7 @@
 }
 .sponsor-eyebrow {
   font-size: var(--size-body);
+  font-weight: 700;
   color: var(--text);
   margin-bottom: 14px;
 }
