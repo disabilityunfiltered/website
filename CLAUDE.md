@@ -29,5 +29,5 @@ Podcast brand site. Eleventy static site (JavaScript), deployed on Render. Conte
 - docs/brand.md: palette with contrast ratios, logo masters, type, voice.
 - docs/architecture.md: how the build works, where each kind of change lives.
 - docs/deploy.md: GitHub, Render, DNS, Resend email signup and its Worker.
-- docs/content-workflow.md: how to add an episode (Phase 2, not yet written).
+- docs/content-workflow.md: how to add an episode, episode file field reference.
 - Project email for all accounts: hello@disabilityunfiltered.com.au

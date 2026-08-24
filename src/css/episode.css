@@ -1,0 +1,61 @@
+/* Episode page (layouts/episode.njk). Reading column, media first, transcript last. */
+.episode-header {
+  background: var(--tint);
+  padding: var(--space-section) 0 40px;
+  margin-bottom: 32px;
+}
+.episode-header h1 { margin-bottom: 8px; }
+.episode-header .episode-guest { font-size: var(--size-3); font-weight: 500; }
+.episode-meta { color: var(--teal-strong); font-size: var(--size-small); margin-top: 6px; }
+.episode-meta span { margin-left: 6px; }
+
+.episode-video {
+  position: relative; aspect-ratio: 16 / 9;
+  background: var(--ink); border-radius: var(--radius); overflow: hidden;
+  margin-bottom: 24px;
+}
+.episode-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+.episode-audio { margin-bottom: 24px; }
+.episode-audio audio { width: 100%; min-height: var(--target); }
+
+.episode-listen { margin-bottom: 32px; }
+.episode-listen .listen-badges { margin-top: 0; }
+
+.episode h2 { margin: 2.2rem 0 0.8rem; }
+.episode p, .episode ol, .episode ul { margin-bottom: 1rem; }
+
+.episode-guest-photo {
+  float: left; margin: 4px 20px 12px 0;
+  border-radius: 50%; object-fit: cover;
+  border: 3px solid var(--teal-soft);
+}
+.episode-bio::after { content: ""; display: block; clear: both; }
+
+.episode-chapters ol { list-style: none; padding: 0; }
+.episode-chapters li { padding: 8px 0; border-bottom: 1px solid var(--tint); }
+.episode-chapters a { text-decoration: none; display: inline-flex; align-items: center; min-height: 32px; }
+.episode-chapters a:hover { text-decoration: underline; }
+.chapter-time {
+  display: inline-block; min-width: 4.5rem;
+  color: var(--teal-strong); font-variant-numeric: tabular-nums; font-weight: 500;
+}
+
+.episode-transcript { scroll-margin-top: 24px; }
+.episode-transcript p { max-width: 68ch; }
+
+.episode-share-list { display: flex; flex-wrap: wrap; gap: 8px 24px; list-style: none; padding: 0; }
+.episode-share-list a { display: inline-flex; align-items: center; min-height: 32px; font-weight: 500; }
+
+.episode-nav {
+  display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin: 40px 0 16px;
+}
+.episode-nav-link {
+  display: flex; flex-direction: column; gap: 4px;
+  background: var(--surface); border: 1px solid var(--tint); border-top: 4px solid var(--teal);
+  border-radius: var(--radius); padding: 18px 20px;
+  color: var(--ink); text-decoration: none; font-weight: 500;
+}
+.episode-nav-link:hover { border-top-color: var(--ink); text-decoration: underline; }
+.episode-all { margin-bottom: var(--space-section); }

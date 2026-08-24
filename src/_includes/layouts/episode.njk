@@ -1,0 +1,114 @@
+---
+layout: layouts/base.njk
+---
+{# Host-agnostic episode page. Every media reference comes from the episode's
+   front matter (content/episodes/*.md): audioUrl from whichever podcast host we
+   use, youtubeId from YouTube, listen.* from each directory. Swap hosts = new
+   URLs in the episode file, zero template changes. Body of the file = transcript. #}
+{% set ytUrl = ("https://www.youtube.com/watch?v=" + youtubeId) if youtubeId else null %}
+<article class="episode">
+  <header class="episode-header">
+    <div class="wrap wrap-narrow">
+      <p class="eyebrow">Episode{% if episodeNumber %} {{ episodeNumber }}{% endif %}</p>
+      <h1>{{ title }}</h1>
+      {% if guest %}<p class="episode-guest">with {{ guest }}</p>{% endif %}
+      <p class="episode-meta">
+        <time datetime="{{ page.date | isoDate }}">{{ page.date | readableDate }}</time>
+        {% if duration %}<span aria-hidden="true">&middot;</span> <span>{{ duration }}</span>{% endif %}
+      </p>
+    </div>
+  </header>
+
+  <div class="wrap wrap-narrow">
+    {% if youtubeId %}
+    <div class="episode-video">
+      <iframe src="https://www.youtube-nocookie.com/embed/{{ youtubeId }}"
+        title="Watch: {{ title }}" loading="lazy"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+    {% endif %}
+
+    {% if audioUrl %}
+    <section class="episode-audio" aria-labelledby="listen-heading">
+      <h2 id="listen-heading" class="visually-hidden">Listen</h2>
+      <audio controls preload="none" src="{{ audioUrl }}">
+        Your browser cannot play this audio. <a href="{{ audioUrl }}">Download the episode</a> instead.
+      </audio>
+    </section>
+    {% endif %}
+
+    {% set links = listen or {} %}
+    {% if links.apple or links.spotify or ytUrl or site.listen.apple or site.listen.spotify %}
+    <section class="episode-listen" aria-labelledby="listen-on-heading">
+      <h2 id="listen-on-heading" class="visually-hidden">Listen on</h2>
+      <ul class="listen-badges">
+        {% if links.apple or site.listen.apple %}<li><a class="badge" href="{{ links.apple or site.listen.apple }}">Apple Podcasts</a></li>{% endif %}
+        {% if links.spotify or site.listen.spotify %}<li><a class="badge" href="{{ links.spotify or site.listen.spotify }}">Spotify</a></li>{% endif %}
+        {% if ytUrl %}<li><a class="badge" href="{{ ytUrl }}">YouTube</a></li>{% endif %}
+      </ul>
+    </section>
+    {% endif %}
+
+    {% if summary %}
+    <section class="episode-summary" aria-labelledby="about-heading">
+      <h2 id="about-heading">About this episode</h2>
+      <p>{{ summary }}</p>
+    </section>
+    {% endif %}
+
+    {% if guest and guestBio %}
+    <section class="episode-bio" aria-labelledby="guest-heading">
+      <h2 id="guest-heading">About {{ guest }}</h2>
+      {% if guestPhoto %}<img class="episode-guest-photo" src="{{ guestPhoto }}" alt="{{ guestPhotoAlt or guest }}" width="160" height="160" loading="lazy">{% endif %}
+      <p>{{ guestBio }}</p>
+    </section>
+    {% endif %}
+
+    {% if chapters and chapters.length %}
+    <section class="episode-chapters" aria-labelledby="chapters-heading">
+      <h2 id="chapters-heading">In this episode</h2>
+      <ol>
+        {% for c in chapters %}
+        <li>
+          {% if ytUrl %}<a href="{{ ytUrl }}&t={{ c.time | toSeconds }}s"><span class="chapter-time">{{ c.time }}</span> {{ c.title }}</a>
+          {% else %}<span class="chapter-time">{{ c.time }}</span> {{ c.title }}{% endif %}
+        </li>
+        {% endfor %}
+      </ol>
+    </section>
+    {% endif %}
+
+    <section class="episode-transcript" id="transcript" aria-labelledby="transcript-heading">
+      <h2 id="transcript-heading">Transcript</h2>
+      {% if content | trim %}
+        {{ content | safe }}
+      {% else %}
+        <p class="empty-state">The transcript for this episode is being prepared and will be added here.</p>
+      {% endif %}
+    </section>
+
+    {% set shareUrl = site.url + page.url %}
+    <section class="episode-share" aria-labelledby="share-heading">
+      <h2 id="share-heading">Share this episode</h2>
+      <ul class="episode-share-list">
+        <li><a href="mailto:?subject={{ title | urlencode }}&body={{ shareUrl | urlencode }}">Email</a></li>
+        <li><a href="https://www.facebook.com/sharer/sharer.php?u={{ shareUrl | urlencode }}">Facebook</a></li>
+        <li><a href="https://www.linkedin.com/sharing/share-offsite/?url={{ shareUrl | urlencode }}">LinkedIn</a></li>
+        <li><a href="{{ shareUrl }}">Copy link: {{ shareUrl }}</a></li>
+      </ul>
+    </section>
+
+    {% set prev = collections.episodes | getPreviousCollectionItem %}
+    {% set next = collections.episodes | getNextCollectionItem %}
+    {% if prev or next %}
+    <nav class="episode-nav" aria-label="More episodes">
+      {# Collection is newest-first, so "previous" in the list is the newer episode #}
+      {% if next %}<a class="episode-nav-link" href="{{ next.url }}"><span class="eyebrow">Older episode</span><span>{{ next.data.title }}</span></a>{% endif %}
+      {% if prev %}<a class="episode-nav-link" href="{{ prev.url }}"><span class="eyebrow">Newer episode</span><span>{{ prev.data.title }}</span></a>{% endif %}
+    </nav>
+    {% endif %}
+    <p class="episode-all"><a href="/episodes/">All episodes</a></p>
+  </div>
+</article>
+{% include "components/follow-strip.njk" %}

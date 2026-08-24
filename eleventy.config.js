@@ -11,6 +11,13 @@ export default function (eleventyConfig) {
     new Date(dateObj).toLocaleDateString("en-AU", { day: "numeric", month: "long", year: "numeric" })
   );
 
+  eleventyConfig.addFilter("isoDate", (dateObj) => new Date(dateObj).toISOString().slice(0, 10));
+
+  // "1:02:30" or "12:30" -> seconds, for YouTube chapter links
+  eleventyConfig.addFilter("toSeconds", (t) =>
+    String(t).split(":").reduce((acc, part) => acc * 60 + Number(part), 0)
+  );
+
   return {
     dir: {
       input: ".",

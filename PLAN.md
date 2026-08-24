@@ -1,5 +1,5 @@
 # Disability Unfiltered - Build Plan
-Status: PHASE 1 LIVE at https://disabilityunfiltered.com.au with email signup. Phase 2 (episodes) not started. Last updated 2026-08-23.
+Status: PHASE 1 LIVE at https://disabilityunfiltered.com.au with email signup. Phase 2: episode template and content model built (docs/content-workflow.md); first real episode and announcement email outstanding. Last updated 2026-08-23.
 
 ## 1. What this is
 
@@ -39,7 +39,7 @@ WCAG 2.2 AA minimum: full transcript on every episode page, every colour pair co
 ## 6. Build phases
 
 1. Phase 1, foundation: DONE. Live site, brand system, pages, domain, email signup with welcome email.
-2. Phase 2, episodes: episode content model, episode template (YouTube embed, listen badges, summary, guest bio, full transcript), episodes index, first real episode, docs/content-workflow.md. Also: automatic episode announcement email (GitHub Action sends a Resend Broadcast when a new episode file lands).
+2. Phase 2, episodes: DONE content model, episode template (YouTube embed, audio player, listen badges, summary, guest bio, chapters, full transcript, share, older/newer), episodes index, docs/content-workflow.md. REMAINING: first real episode, and automatic episode announcement email (GitHub Action sends a Resend Broadcast when a new episode file lands).
 3. Phase 3, growth: OG/social share images per episode, JSON-LD PodcastSeries/PodcastEpisode schema, sitemap, analytics (privacy-respecting).
 
 ## 7. Open questions for Matt
