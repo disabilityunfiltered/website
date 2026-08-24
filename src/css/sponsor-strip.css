@@ -15,9 +15,11 @@
 .sponsor-link {
   display: inline-block;
   border-radius: var(--radius);
+  text-decoration: none;
+  font-size: 0; /* no stray underline or gap from whitespace inside the link */
 }
 .sponsor-link img {
   display: block;
-  width: min(300px, 70vw);
+  width: min(420px, 80vw);
   height: auto;
 }
