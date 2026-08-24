@@ -1,7 +1,9 @@
-/* Sits inside the episode band's rhythm: the reel's bottom padding provides the
-   gap above, so this only pads below before the tinted follow strip. */
+/* Its own full-width band between the episode reel (ground) and the follow
+   strip (tint): white surface, same 56px rhythm as the follow strip.
+   Bands stack flush against their neighbours: no outer margins. */
 .sponsor-strip {
-  padding: 0 0 var(--space-section);
+  background: var(--surface);
+  padding: 56px 0;
   text-align: center;
 }
 .sponsor-eyebrow {
