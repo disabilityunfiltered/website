@@ -1,0 +1,20 @@
+/* Sits inside the episode band's rhythm: the reel's bottom padding provides the
+   gap above, so this only pads below before the tinted follow strip. */
+.sponsor-strip {
+  padding: 0 0 var(--space-section);
+  text-align: center;
+}
+.sponsor-eyebrow {
+  font-size: var(--size-small);
+  color: var(--text);
+  margin-bottom: 14px;
+}
+.sponsor-link {
+  display: inline-block;
+  border-radius: var(--radius);
+}
+.sponsor-link img {
+  display: block;
+  width: min(300px, 70vw);
+  height: auto;
+}
