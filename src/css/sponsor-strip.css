@@ -1,5 +1,5 @@
-/* Its own full-width band between the episode reel (ground) and the follow
-   strip (tint): white surface, same 56px rhythm as the follow strip.
+/* Its own full-width band between the follow strip (tint) and the footer
+   (purple): white surface, same 56px rhythm as the follow strip.
    Bands stack flush against their neighbours: no outer margins. */
 .sponsor-strip {
   background: var(--surface);
@@ -7,7 +7,7 @@
   text-align: center;
 }
 .sponsor-eyebrow {
-  font-size: var(--size-small);
+  font-size: var(--size-body);
   color: var(--text);
   margin-bottom: 14px;
 }
